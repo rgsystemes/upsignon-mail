@@ -1,0 +1,13 @@
+{
+    "title": "Merci pour cette demande d’essai gratuit",
+    "content": "Bonjour,\n\n⏳ Votre essai gratuit prendra fin automatiquement le { trialEndDate }. Passée cette date, l’accès à votre banque de coffres-forts sera suspendu.",
+    "howToActivate": "Vous vous demandez comment faire pour l’activer ? - C’est parti",
+    "howToActivateContent": "🚩 Pour activer votre banque de coffres-forts et commencer à sécuriser vos accès, veuillez suivre les instructions disponibles à cette adresse : 👉{ link }",
+    "qrCodeTitle": "Vous pouvez également scanner ce QR code pour y accéder facilement :",
+    "stepTitle": "🚩 🚩 Une fois votre coffre-fort créé :",
+    "step1": "1. Accéder à la console de supervision en cliquant ",
+    "ici": "ici",
+    "step2": "2. Rentrez votre adresse mail",
+    "contactContent": "Si vous souhaitez poursuivre l’utilisation d’UpSignon PRO après cette date, n’hésitez pas à nous contacter.\nUn membre de notre équipe commerciale reviendra vers vous rapidement pour vous accompagner dans la souscription.",
+    "footer": "Nous restons disponibles pour toute question.\nÀ très bientôt"
+}

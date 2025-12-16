@@ -1,0 +1,13 @@
+{
+    "title": "Welcome to the trial",
+    "content": "Hello,\n\n⏳ Your free trial will automatically end on { trialEndDate }. After this date, access to your vault bank will be suspended.",
+    "howToActivate": "You are wondering how to activate it? - Here we go",
+    "howToActivateContent": "🚩 To activate your vault bank and start securing your access, please follow the instructions available at this address: 👉{ link }",
+    "qrCodeTitle": "You can also scan this QR code to easily access it:",
+    "stepTitle": "🚩 🚩 Once your vault is created:",
+    "step1": "1. Access the supervision console by clicking ",
+    "ici": "here",
+    "step2": "2. Enter your email",
+    "contactContent": "If you want to continue using UpSignon PRO after this date, please do not hesitate to contact us.\nA member of our sales team will get back to you shortly to guide you through the subscription process.",
+    "footer": "We are available for any questions.\nSee you soon"
+}

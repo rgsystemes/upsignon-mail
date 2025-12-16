@@ -1,0 +1,5 @@
+{
+    "content": "Bonjour,\n\nUn nouvel appareil ({ deviceName }) souhaite rejoindre votre coffre-fort UpSignOn.\n\nPour l’autoriser veuillez saisir le code suivant dans l’interface :",
+    "availableCode": "Ce code est valable jusqu’au { availableCodeDate }.",
+    "warning": "Si vous n’êtes pas à l’origine de cette demande, pas de panique : ne validez rien et contactez votre administrateur pour enquêter 🔎 👮️"
+}

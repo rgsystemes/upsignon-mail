@@ -1,0 +1,7 @@
+{
+    "title": "Réinitialisation de mot de passe",
+    "content": "Bonjour,\n\nVous êtes sur le point de vous forger un tout nouveau mot de passe (solide comme un roc 💪🔒).\n\nLa demande de réinitialisation a été émise depuis votre appareil \"{ deviceName }\".\n\n",
+    "codeTitle": "Voici le code à saisir pour lancer l’opération :",
+    "expiration": "⏳ Ce code expirera 20 minutes après réception.— alors ne traînez pas trop ! Et est seulement valide pour l’appareil : { deviceName }",
+    "footer": "Besoin d’un coup de main ? On est là."
+}

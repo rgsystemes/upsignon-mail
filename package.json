@@ -1,0 +1,23 @@
+{
+  "name": "upsignon-mail",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "esbuild src/templates/index.tsx --bundle --format=esm --platform=browser --target=es2020 --outdir=dist --sourcemap",
+    "debug": "pnpm run build && http-server -p 3000"
+  },
+  "devDependencies": {
+    "@react-email/components": "1.0.1",
+    "@react-email/render": "^2.0.0",
+    "@types/node": "^25.0.2",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "esbuild": "0.27.1",
+    "http-server": "^14.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-email": "5.0.8",
+    "react-intl": "^8.0.1",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "title": "Reset password",
+    "content": "Hello,\n\nYou are about to forge a brand new password (solid as a rock 💪🔒).\n\nThe reset request has been issued from your device \"{ deviceName }\".\n\nHere is the code to enter to launch the operation :",
+    "codeTitle": "Here is the code to enter to start the operation:",
+    "expiration": "⏳ This code will expire 20 minutes after receipt.— so don't take too long! And is only valid for the device : { deviceName }",
+    "footer": "Need a hand? We're here."
+}

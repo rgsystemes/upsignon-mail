@@ -1,0 +1,9 @@
+{
+    "title": "Un oubli de mot de passe ça arrive à tout le monde...",
+    "content": "Bonjour, \n\n L’utilisateur { emailUser } a oublié son mot de passe maître pour son coffre-fort UpSignOn PRO.\n\n Pas de panique, il peut le réinitialiser avec votre aide — c’est vous qui avez fixé les règles de sécurité pour cette banque, après tout 👮‍♀️🔐",
+    "stepTitle": "Voilà la marche à suivre  :",
+    "step1": "1. Se connecter à la console de supervision",
+    "step2": "2. Aller sur la page des demandes de réinitialisation de mots de passe",
+    "step3": "3. Approuver celle de cet utilisation",
+    "footer": "Un petit oubli, ça arrive même aux meilleurs 😉\nMerci pour votre réactivité !"
+}

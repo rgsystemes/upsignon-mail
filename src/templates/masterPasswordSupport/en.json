@@ -1,0 +1,9 @@
+{
+    "title": "A master password forget is normal...",
+    "content": "Hello,\n\nThe user { emailUser } has forgotten his master password for his UpSignOn PRO vault.\n\nDon't panic, he can reset it with your help — you have set the security rules for this vault, after all 👮‍♀️🔐",
+    "stepTitle": "Here's the steps to follow :",
+    "step1": "1. Connect to the supervision console",
+    "step2": "2. Go to the page of the master password reset requests",
+    "step3": "3. Approve the request of this user",
+    "footer": "A little forget, it happens even to the best 😉\nThank you for your reactivity !"
+}

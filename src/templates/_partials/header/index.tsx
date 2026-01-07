@@ -1,10 +1,14 @@
-import { Section, Img } from '@react-email/components'
+import { Img, Section } from '@react-email/components'
 
 export const Header = () => {
-    return (
-        <Section className="mb-6">
-            <Img src="/src/templates/_assets/logoHeader.png" alt="Septeo" className="mx-auto" />
-            <Img src="/src/templates/_assets/nerd.png" alt="Septeo" className="w-full" />
-        </Section>
-    )
+  return (
+    <Section className="mb-6">
+      <Img
+        src="https://app.upsignon.eu/mails/logoHeader.png"
+        alt="Septeo"
+        className="mx-auto"
+      />
+      <Img src="https://app.upsignon.eu/mails/nerd.png" alt="Septeo" className="w-full" />
+    </Section>
+  )
 }

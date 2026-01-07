@@ -1,8 +1,0 @@
-{
-    "title": "Your team member needs you!",
-    "content": "Hello,\n\nThe user { emailUser } wants to authorize a new device.\n\nSince this person already has an authorized device (or is in the process of being authorized), your approval is necessary to validate this new request — you have set the security rules for this vault, after all 👮‍♀️🔐",
-    "stepTitle": "Here's the steps to follow :",
-    "step1": "1. Connect to the supervision console",
-    "step2": "2. Go to the page of the users",
-    "step3": "3. Open the list of devices and click the right device"
-}

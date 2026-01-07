@@ -1,4 +1,5 @@
 {
+  "fr": {
     "title": "Un oubli de mot de passe ça arrive à tout le monde...",
     "content": "Bonjour, \n\n L’utilisateur { emailUser } a oublié son mot de passe maître pour son coffre-fort UpSignOn PRO.\n\n Pas de panique, il peut le réinitialiser avec votre aide — c’est vous qui avez fixé les règles de sécurité pour cette banque, après tout 👮‍♀️🔐",
     "stepTitle": "Voilà la marche à suivre  :",
@@ -6,4 +7,14 @@
     "step2": "2. Aller sur la page des demandes de réinitialisation de mots de passe",
     "step3": "3. Approuver celle de cet utilisation",
     "footer": "Un petit oubli, ça arrive même aux meilleurs 😉\nMerci pour votre réactivité !"
+  },
+  "en": {
+    "title": "A master password forget is normal...",
+    "content": "Hello,\n\nThe user { emailUser } has forgotten his master password for his UpSignOn PRO vault.\n\nDon't panic, he can reset it with your help — you have set the security rules for this vault, after all 👮‍♀️🔐",
+    "stepTitle": "Here's the steps to follow :",
+    "step1": "1. Connect to the supervision console",
+    "step2": "2. Go to the page of the master password reset requests",
+    "step3": "3. Approve the request of this user",
+    "footer": "A little forget, it happens even to the best 😉\nThank you for your reactivity !"
+  }
 }

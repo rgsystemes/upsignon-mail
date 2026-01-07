@@ -1,3 +1,3 @@
-export * from './header'
-export * from './footer'
-export * from './layout'
+export * from './header/index.js'
+export * from './footer/index.js'
+export * from './layout/index.js'

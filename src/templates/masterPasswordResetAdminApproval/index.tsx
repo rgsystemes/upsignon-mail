@@ -1,5 +1,6 @@
 import { Layout } from '@partials/layout/index.js'
 import { Section, Text } from '@react-email/components'
+import { Locales } from '@templates/index.js'
 import { FormattedMessage } from 'react-intl'
 
 import messages from './messages.json' with { type: 'json' }
@@ -8,7 +9,7 @@ type Args = {
   emailUser: string
 }
 
-const Template = ({ emailUser, locale = 'fr' }) => {
+const Template = ({ emailUser, locale = 'fr' }: Args & { locale: Locales }) => {
   return (
     <Layout messages={messages[locale]} locale={locale}>
       <Section className="text-text-primary px-4">
@@ -16,7 +17,13 @@ const Template = ({ emailUser, locale = 'fr' }) => {
           <FormattedMessage id="title" />
         </Text>
         <Text className="text-base whitespace-pre-line">
-          <FormattedMessage id="content" values={{ emailUser }} />
+          <FormattedMessage
+            id="content"
+            values={{
+              emailUser,
+              italic: (chunks) => <span style={{ fontStyle: 'italic' }}>{chunks}</span>,
+            }}
+          />
         </Text>
         <Text className="text-base">
           <FormattedMessage id="stepTitle" />
@@ -41,6 +48,7 @@ const Template = ({ emailUser, locale = 'fr' }) => {
 export const templateConfig = {
   Template,
   args: {} as Args,
+  object: (locale: Locales) => messages[locale].object,
 } as const
 
 export default Template

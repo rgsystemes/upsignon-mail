@@ -1,14 +1,14 @@
-import { templateConfig as masterPasswordSupport } from '@templates/masterPasswordSupport/index.js'
+import { templateConfig as masterPasswordSupport } from '#/templates/masterPasswordResetAdminApproval/index.js'
+import { templateConfig as newDeviceAdminApproval } from '#/templates/newDeviceAdminApproval/index.js'
 import { templateConfig as newDevice } from '@templates/newDevice/index.js'
-import { templateConfig as pendingDeviceRequest } from '@templates/pendingDeviceRequest/index.js'
 import { templateConfig as proAdminInvitation } from '@templates/proAdminInvitation/index.js'
 import { templateConfig as resetPassword } from '@templates/resetPassword/index.js'
 import { templateConfig as trialWelcome } from '@templates/trialWelcome/index.js'
 
 export const registry = {
   masterPasswordSupport,
+  newDeviceAdminApproval,
   newDevice,
-  pendingDeviceRequest,
   proAdminInvitation,
   resetPassword,
   trialWelcome,
@@ -16,8 +16,12 @@ export const registry = {
 
 export type TemplateName = keyof typeof registry
 export type TemplateArgs<T extends TemplateName> = (typeof registry)[T]['args']
-type Locales = 'fr' | 'en'
+export type Locales = 'fr' | 'en'
 
 export type AnyMailConfig = {
-  [T in TemplateName]: { templateName: T; locales: Locales; args: TemplateArgs<T> }
+  [T in TemplateName]: {
+    templateName: T
+    locales: Locales
+    args: TemplateArgs<T>
+  }
 }[TemplateName]

@@ -2,9 +2,16 @@
   "name": "upsignon-mail",
   "version": "1.0.0",
   "type": "module",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "debug": "email dev --dir ./src/templates",

@@ -1,6 +1,6 @@
 {
   "fr": {
-    "object": "Bienvenue chez UpSignon – Démarrez votre essai gratuit",
+    "object": "Bienvenue chez UpSignOn – Démarrez votre essai gratuit",
     "title": "Merci pour cette demande d’essai gratuit",
     "content": "Bonjour,\n\n⏳ <bold>Votre essai gratuit prendra fin automatiquement le { trialEndDate }</bold>. Passée cette date, l’accès à votre banque de coffres-forts sera suspendu.",
     "howToActivate": "Vous vous demandez comment faire pour l’activer ? - <italic>C’est parti</italic>",
@@ -13,7 +13,7 @@
     "footer": "Nous restons disponibles pour toute question.\nÀ très bientôt"
   },
   "en": {
-    "object": "Welcome to UpSignon – Start your free trial",
+    "object": "Welcome to UpSignOn – Start your free trial",
     "title": "Thank you for this free trial request",
     "content": "Hello,\n\n⏳ <bold>Your free trial will automatically end on { trialEndDate }</bold>. After this date, access to your vault bank will be suspended.",
     "howToActivate": "You are wondering how to activate it? - <italic>Here we go</italic>",

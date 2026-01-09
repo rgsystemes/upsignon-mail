@@ -17,7 +17,7 @@
     "content": "Hello,\n\nTo access your supervision console, click here👇",
     "button": "Access the console",
     "expiration": "⏳ This link will expire 20 minutes after receipt.",
-    "linkTitle": "If the time file too quickly you can generate a new one from <link>this page.</link>",
+    "linkTitle": "If the time flies too quickly you can generate a new one from <link>this page.</link>",
     "stepTitle": "Before you get started, two small things to check 🔧:",
     "step1": "1. Having the UpSignOn application installed on this device\n→ Otherwise, <link>a little tour here</link> is necessary.",
     "step2": "2. Having created or imported your PRO vault with the configuration link shared by another admin\n→ This is essential for everything to work like on wheels.",

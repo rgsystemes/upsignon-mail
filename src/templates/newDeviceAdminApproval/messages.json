@@ -6,7 +6,7 @@
     "stepTitle": "Voilà la marche à suivre  :",
     "step1": "1. Se connecter à la console de supervision",
     "step2": "2. Aller sur la page des utilisateurs",
-    "step3": "3. Ouvrir la liste des appareils et cliquer le bon appareil et cliquer sur \"Autoriser\" pour cet appareil"
+    "step3": "3. Ouvrir la liste des appareils et cliquer sur \"Autoriser\" pour cet appareil"
   },
   "en": {
     "object": "New device authorization request pending ✅",
@@ -15,6 +15,6 @@
     "stepTitle": "Here's the steps to follow:",
     "step1": "1. Connect to the supervision console",
     "step2": "2. Go to the page of the users",
-    "step3": "3. Open the list of devices and click the right device and click \"Authorize\" for this device"
+    "step3": "3. Open the list of devices and click \"Authorize\" for this device"
   }
 }

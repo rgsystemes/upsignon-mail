@@ -1,0 +1,26 @@
+{
+  "fr": {
+    "object": "Vous voilà aux commandes d’UpSignOn PRO 🚀",
+    "title": "Vous avez été invité à administrer UpSignOn PRO",
+    "content": "Bonjour,\n\nPour accéder à votre console de supervision, cliquez ici👇",
+    "button": "Accéder à la console",
+    "expiration": "⏳ Ce lien expirera 20 minutes après réception.",
+    "linkTitle": "Si le temps file trop vite vous pouvez en générer un nouveau depuis <link>cette page.</link>",
+    "stepTitle": "Avant de vous lancer, deux petites choses à vérifier 🔧 :",
+    "step1": "1. Avoir l’application UpSignOn installée sur cet appareil\n→ Sinon, <link>un petit tour par ici</link> s’impose.",
+    "step2": "2. Avoir créé ou importé votre coffre-fort PRO avec le lien de configuration partagé par un autre admin\n→ C’est essentiel pour que tout fonctionne comme sur des roulettes.",
+    "footer": "Vous pouvez ignorer cet email si vous avez déjà accès à la console d'administration pour une autre banque de coffre-fort."
+  },
+  "en": {
+    "object": "You are now in charge of UpSignOn PRO 🚀",
+    "title": "You have been invited to manage UpSignOn PRO",
+    "content": "Hello,\n\nTo access your supervision console, click here👇",
+    "button": "Access the console",
+    "expiration": "⏳ This link will expire 20 minutes after receipt.",
+    "linkTitle": "If the time flies too quickly you can generate a new one from <link>this page.</link>",
+    "stepTitle": "Before you get started, two small things to check 🔧:",
+    "step1": "1. Having the UpSignOn application installed on this device\n→ Otherwise, <link>a little tour here</link> is necessary.",
+    "step2": "2. Having created or imported your PRO vault with the configuration link shared by another admin\n→ This is essential for everything to work like on wheels.",
+    "footer": "You can ignore this email if you already have access to the administration console for another vault."
+  }
+}

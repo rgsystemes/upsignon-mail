@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "esnext",
+    "outDir": "dist",
+    "declaration": true,
+    "declarationMap": false,
+    "sourceMap": false,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "skipLibCheck": true,
+    "paths": {
+      "#/*": ["src/*"],
+      "@templates/*": ["src/templates/*"],
+      "@partials/*": ["src/templates/_partials/*"]
+    }
+  },
+  "include": ["./src"]
+}

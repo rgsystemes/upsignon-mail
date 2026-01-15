@@ -1,8 +1,8 @@
-import { Layout } from '@partials/layout/index.js'
 import { Section, Text } from '@react-email/components'
-import { Locales } from '@templates/index.js'
 import { FormattedMessage } from 'react-intl'
 
+import { Layout } from '../_partials/layout/index.js'
+import { Locales } from '../index.js'
 import messages from './messages.json' with { type: 'json' }
 
 type Args = {
@@ -48,7 +48,7 @@ const Template = ({ emailUser, locale = 'fr' }: Args & { locale: Locales }) => {
 export const templateConfig = {
   Template,
   args: {} as Args,
-  object: (locale: Locales) => messages[locale].object,
+  subject: (locale: Locales) => messages[locale].subject,
 } as const
 
 export default Template

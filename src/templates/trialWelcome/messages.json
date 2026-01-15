@@ -1,10 +1,10 @@
 {
   "fr": {
-    "object": "Bienvenue chez UpSignOn – Démarrez votre essai gratuit",
+    "subject": "Bienvenue chez UpSignOn – Démarrez votre essai gratuit",
     "title": "Merci pour cette demande d’essai gratuit",
     "content": "Bonjour,\n\n⏳ <bold>Votre essai gratuit prendra fin automatiquement le { trialEndDate }</bold>. Passée cette date, l’accès à votre banque de coffres-forts sera suspendu.",
     "howToActivate": "Vous vous demandez comment faire pour l’activer ? - <italic>C’est parti</italic>",
-    "howToActivateContent": "🚩 <bold>Pour activer votre banque de coffres-forts</bold> et commencer à sécuriser vos accès, veuillez suivre les instructions disponibles à cette adresse : 👉{ activationLink }",
+    "howToActivateContent": "🚩 <bold>Pour activer votre banque de coffres-forts</bold> et commencer à sécuriser vos accès, veuillez suivre les instructions disponibles à cette adresse : 👉 <link></link>",
     "qrCodeTitle": "Vous pouvez également scanner ce QR code pour y accéder facilement :",
     "stepTitle": "🚩 🚩 Une fois votre coffre-fort créé :",
     "step1": "1. Accéder à la console de supervision en cliquant <link>ici</link>",
@@ -13,11 +13,11 @@
     "footer": "Nous restons disponibles pour toute question.\nÀ très bientôt"
   },
   "en": {
-    "object": "Welcome to UpSignOn – Start your free trial",
+    "subject": "Welcome to UpSignOn – Start your free trial",
     "title": "Thank you for this free trial request",
     "content": "Hello,\n\n⏳ <bold>Your free trial will automatically end on { trialEndDate }</bold>. After this date, access to your vault bank will be suspended.",
     "howToActivate": "You are wondering how to activate it? - <italic>Here we go</italic>",
-    "howToActivateContent": "🚩 <bold>To activate your vault bank</bold> and start securing your access, please follow the instructions available at this address: 👉{ activationLink }",
+    "howToActivateContent": "🚩 <bold>To activate your vault bank</bold> and start securing your access, please follow the instructions available at this address: 👉 <link></link>",
     "qrCodeTitle": "You can also scan this QR code to easily access it:",
     "stepTitle": "🚩 🚩 Once your vault is created:",
     "step1": "1. Access the supervision console by clicking <link>here</link>",

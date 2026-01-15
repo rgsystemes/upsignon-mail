@@ -1,13 +1,13 @@
 {
   "fr": {
-    "object": "Un nouvel appareil toque à la porte de votre coffre-fort UpSignOn 🔐",
-    "content": "Bonjour,\n\nUn nouvel appareil ({ deviceName }) souhaite rejoindre votre coffre-fort UpSignOn.\n\nPour l’autoriser veuillez saisir le code suivant dans l’interface :",
+    "subject": "Un nouvel appareil toque à la porte de votre coffre-fort UpSignOn 🔐",
+    "content": "Bonjour,\n\nUn nouvel appareil { deviceName } ({ deviceType } { deviceOSAndVersion }) souhaite rejoindre votre coffre-fort UpSignOn.\n\nPour l’autoriser veuillez saisir le code suivant dans l’interface :",
     "availableCode": "Ce code est valable jusqu’au { availableCodeDate }.",
     "warning": "Si vous n’êtes pas à l’origine de cette demande, pas de panique : ne validez rien et contactez votre administrateur pour enquêter 🔎 👮️"
   },
   "en": {
-    "object": "A new device is knocking at the door of your UpSignOn vault 🔐",
-    "content": "Hello,\n\nA new device ({ deviceName }) wants to join your UpSignOn vault.\n\nTo authorize it, please enter the following code in the interface:",
+    "subject": "A new device is knocking at the door of your UpSignOn vault 🔐",
+    "content": "Hello,\n\nA new device { deviceName } ({ deviceType } { deviceOS }) wants to join your UpSignOn vault.\n\nTo authorize it, please enter the following code in the interface:",
     "availableCode": "This code is valid until { availableCodeDate }.",
     "warning": "If you are not the originator of this request, don't worry: do not validate anything and contact your administrator to investigate 🔎 👮️"
   }

@@ -1,9 +1,9 @@
-import { Layout } from '@partials/layout/index.js'
 import { Link, Section, Text } from '@react-email/components'
-import { Locales } from '@templates/index.js'
 import { QRCodeSVG } from 'qrcode.react'
 import { FormattedMessage } from 'react-intl'
 
+import { Layout } from '../_partials/layout/index.js'
+import { Locales } from '../index.js'
 import messages from './messages.json' with { type: 'json' }
 
 type Args = {
@@ -45,8 +45,12 @@ const Template = ({
           <FormattedMessage
             id="howToActivateContent"
             values={{
-              activationLink,
               bold: (chunks) => <span style={{ fontWeight: 'bold' }}>{chunks}</span>,
+              link: () => (
+                <Link href={activationLink} className="text-link-primary">
+                  {activationLink}
+                </Link>
+              ),
             }}
           />
         </Text>
@@ -88,7 +92,7 @@ const Template = ({
 export const templateConfig = {
   Template,
   args: {} as Args,
-  object: (locale: Locales) => messages[locale].object,
+  subject: (locale: Locales) => messages[locale].subject,
 } as const
 
 export default Template

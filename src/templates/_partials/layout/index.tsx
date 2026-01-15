@@ -1,10 +1,10 @@
-import trads from '@partials/footer/messages.json' with { type: 'json' }
-import { Footer, Header } from '@partials/index.js'
 import { Container, Tailwind } from '@react-email/components'
 import { Body } from '@react-email/components'
 import { Head, Html } from '@react-email/components'
 import { IntlProvider } from 'react-intl'
 
+import trads from '../footer/messages.json' with { type: 'json' }
+import { Footer, Header } from '../index.js'
 import tailwindConfig from './tailwind.config.js'
 
 export const Layout = ({ children, messages, locale }) => {

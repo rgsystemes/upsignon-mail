@@ -1,20 +1,24 @@
-import { Layout } from '@partials/layout/index.js'
 import { Button, Link, Section, Text } from '@react-email/components'
-import { Locales } from '@templates/index.js'
 import { FormattedMessage } from 'react-intl'
 
+import { formatRemainingTime } from '../../helpers/formatRemainingTime.js'
+import { Layout } from '../_partials/layout/index.js'
+import { Locales } from '../index.js'
 import messages from './messages.json' with { type: 'json' }
 
 type Args = {
   adminImportLink: string
   loginPageLink: string
+  expirationDate: Date
 }
 
 const Template = ({
   adminImportLink,
   loginPageLink,
+  expirationDate,
   locale = 'fr',
 }: Args & { locale: Locales }) => {
+  const remainingTime = formatRemainingTime(expirationDate, locale)
   return (
     <Layout messages={messages[locale]} locale={locale}>
       <Section className="text-text-primary px-4">
@@ -31,7 +35,7 @@ const Template = ({
           <FormattedMessage id="button" />
         </Button>
         <Text className="text-base text-center text-text-secondary">
-          <FormattedMessage id="expiration" />
+          <FormattedMessage id="expiration" values={{ remainingTime }} />
         </Text>
         <Text className="text-base text-center text-text-tertiary">
           <FormattedMessage
@@ -74,7 +78,7 @@ const Template = ({
 export const templateConfig = {
   Template,
   args: {} as Args,
-  object: (locale: Locales) => messages[locale].object,
+  subject: (locale: Locales) => messages[locale].subject,
 } as const
 
 export default Template

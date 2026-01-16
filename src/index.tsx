@@ -16,3 +16,5 @@ export const buildEmail = async <T extends TemplateName>(
 
   return { html, text, subject: subject(locales) }
 }
+
+export { getBestLanguage } from './helpers/getBestLanguage.js'

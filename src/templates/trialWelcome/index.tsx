@@ -7,7 +7,7 @@ import { Locales } from '../index.js'
 import messages from './messages.json' with { type: 'json' }
 
 type Args = {
-  trialEndDate: string
+  trialEndDate: Date
   activationLink: string
   consoleLink: string
 }
@@ -28,7 +28,7 @@ const Template = ({
           <FormattedMessage
             id="content"
             values={{
-              trialEndDate,
+              trialEndDate: trialEndDate.toLocaleDateString(locale),
               bold: (chunks) => <span style={{ fontWeight: 'bold' }}>{chunks}</span>,
             }}
           />

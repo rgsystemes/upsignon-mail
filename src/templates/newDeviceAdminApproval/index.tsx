@@ -16,16 +16,26 @@ const Template = ({ emailUser, locale = 'fr' }: Args & { locale: Locales }) => {
         <Text className="text-xl font-bold text-center">
           <FormattedMessage id="title" />
         </Text>
-        <Text className="text-base whitespace-pre-line">
+        <Text className="text-base">
+          <FormattedMessage id="content1" />
+        </Text>
+        <Text className="text-base">
           <FormattedMessage
-            id="content"
+            id="content2"
             values={{
               emailUser,
-              italic: (chunks) => <span style={{ fontStyle: 'italic' }}>{chunks}</span>,
             }}
           />
         </Text>
         <Text className="text-base">
+          <FormattedMessage
+            id="content3"
+            values={{
+              italic: (chunks) => <span style={{ fontStyle: 'italic' }}>{chunks}</span>,
+            }}
+          />
+        </Text>
+        <Text className="text-base font-bold">
           <FormattedMessage id="stepTitle" />
         </Text>
         <Text className="text-base">

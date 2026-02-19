@@ -9,23 +9,33 @@ type Args = {
   emailUser: string
 }
 
-const Template = ({ emailUser, locale = 'fr' }: Args & { locale: Locales }) => {
+const Template = ({ emailUser = '', locale = 'fr' }: Args & { locale: Locales }) => {
   return (
     <Layout messages={messages[locale]} locale={locale}>
       <Section className="text-text-primary px-4">
         <Text className="text-xl font-bold text-center">
           <FormattedMessage id="title" />
         </Text>
-        <Text className="text-base whitespace-pre-line">
+        <Text className="text-base">
+          <FormattedMessage id="content1" />
+        </Text>
+        <Text className="text-base">
           <FormattedMessage
-            id="content"
+            id="content2"
             values={{
               emailUser,
-              italic: (chunks) => <span style={{ fontStyle: 'italic' }}>{chunks}</span>,
             }}
           />
         </Text>
         <Text className="text-base">
+          <FormattedMessage
+            id="content3"
+            values={{
+              italic: (chunks) => <span style={{ fontStyle: 'italic' }}>{chunks}</span>,
+            }}
+          />
+        </Text>
+        <Text className="text-base font-bold">
           <FormattedMessage id="stepTitle" />
         </Text>
         <Text className="text-base">
@@ -37,8 +47,11 @@ const Template = ({ emailUser, locale = 'fr' }: Args & { locale: Locales }) => {
         <Text className="text-base">
           <FormattedMessage id="step3" />
         </Text>
-        <Text className="text-base whitespace-pre-line">
-          <FormattedMessage id="footer" />
+        <Text className="text-base">
+          <FormattedMessage id="footer1" />
+        </Text>
+        <Text className="text-base">
+          <FormattedMessage id="footer2" />
         </Text>
       </Section>
     </Layout>

@@ -14,21 +14,27 @@ type Args = {
 }
 
 const Template = ({
-  deviceName,
-  availableCodeDate,
-  code,
-  deviceType,
-  deviceOSAndVersion,
+  deviceName = '',
+  availableCodeDate = '',
+  code = '',
+  deviceType = '',
+  deviceOSAndVersion = '',
   locale = 'fr',
 }: Args & { locale: Locales }) => {
   return (
     <Layout messages={messages[locale]} locale={locale}>
       <Section className="text-text-primary px-4">
-        <Text className="text-base whitespace-pre-line">
+        <Text className="text-base">
+          <FormattedMessage id="content1" />
+        </Text>
+        <Text className="text-base">
           <FormattedMessage
-            id="content"
+            id="content2"
             values={{ deviceName, deviceType, deviceOSAndVersion }}
           />
+        </Text>
+        <Text className="text-base">
+          <FormattedMessage id="content3" />
         </Text>
         <Text className="text-3xl font-bold text-center">{code}</Text>
         <Text className="text-base text-center">

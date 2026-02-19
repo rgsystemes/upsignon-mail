@@ -2,7 +2,9 @@
   "fr": {
     "subject": "Mission “Réinitialisation de mot de passe” – Top départ ! 🚀",
     "title": "Réinitialisation de mot de passe",
-    "content": "Bonjour,\n\nVous êtes sur le point de vous forger un tout nouveau mot de passe (solide comme un roc 💪🔒).\n\nLa demande de réinitialisation a été émise depuis votre appareil \"{ deviceName }\".\n\n",
+    "content1": "Bonjour,",
+    "content2": "Vous êtes sur le point de vous forger un tout nouveau mot de passe (solide comme un roc 💪🔒).",
+    "content3": "La demande de réinitialisation a été émise depuis votre appareil \"{ deviceName }\".",
     "codeTitle": "Voici le code à saisir pour lancer l’opération :",
     "expiration": "⏳ Ce code expirera { remainingTime } après réception.— alors ne traînez pas trop ! Et est seulement valide pour l’appareil : { deviceName }",
     "footer": "Besoin d’un coup de main ? On est là."
@@ -10,7 +12,9 @@
   "en": {
     "subject": "Mission “Reset password” – Top start! 🚀",
     "title": "Reset password",
-    "content": "Hello,\n\nYou are about to forge a brand new password (solid as a rock 💪🔒).\n\nThe reset request has been issued from your device \"{ deviceName }\".\n\n",
+    "content1": "Hello,",
+    "content2": "You are about to forge a brand new password (solid as a rock 💪🔒).",
+    "content3": "The reset request has been issued from your device \"{ deviceName }\".",
     "codeTitle": "Here is the code to enter to start the operation:",
     "expiration": "⏳ This code will expire { remainingTime } after receipt.— so don't take too long! And is only valid for the device: { deviceName }",
     "footer": "Need a hand? We're here."

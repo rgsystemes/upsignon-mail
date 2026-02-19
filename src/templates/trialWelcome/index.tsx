@@ -50,7 +50,7 @@ const Template = async ({
             id="howToActivateContent"
             values={{
               bold: (chunks) => <span style={{ fontWeight: 'bold' }}>{chunks}</span>,
-              link: (chunks) => (
+              link: () => (
                 <Link href={activationLink} className="text-link-primary">
                   {activationLink}
                 </Link>

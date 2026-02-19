@@ -4,7 +4,7 @@
     "title1": "Alerte de sécurité",
     "title2": "Modification non autorisée de la configuration du protocole Shamir",
     "hello": "Bonjour",
-    "txt1": "Une modification non autorisée de la configuration du protocole de déverrouillage de secours Shamir pour la banque {bankName} ({bankUrl}) a été détectée.",
+    "txt1": "Une modification non autorisée de la configuration du protocole de déverrouillage de secours Shamir pour la banque {bankName} a été détectée. (URL de la banque : {bankUrl})",
     "txt2": "Par mesure de sécurité, la mise-à-jour des sauvegardes de secours a été interrompue pour tous les utilisateurs. Néanmoins, il est possible que des coffres-forts créés récemment puissent avoir été compromis.",
     "txt3": "Vous trouverez en pièce jointe la chaîne de configurations concernée.",
     "txt4": "Nous vous recommandons de traiter cette alerte dans les plus brefs délais en contactant le support de Septeo IT Solutions."
@@ -14,7 +14,7 @@
     "title1": "Security Alert",
     "title2": "Unauthorized modification of the Shamir protocol configuration",
     "hello": "Hello",
-    "txt1": "An unauthorized modification to the Shamir fallback unlock protocol configuration has been detected for the bank {bankName} ({bankUrl}).",
+    "txt1": "An unauthorized modification to the Shamir fallback unlock protocol configuration has been detected for the bank {bankName}. (Bank URL: {bankUrl})",
     "txt2": "As a security measure, backup updates have been suspended for all users. However, it is possible that recently created vaults may have been compromised.",
     "txt3": "Please find the affected configuration chain attached.",
     "txt4": "We recommend that you address this alert as soon as possible by contacting Septeo IT Solutions support."

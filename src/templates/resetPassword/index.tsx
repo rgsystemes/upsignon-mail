@@ -13,9 +13,9 @@ type Args = {
 }
 
 const Template = ({
-  deviceName,
-  code,
-  expirationDate,
+  deviceName = '',
+  code = '',
+  expirationDate = '',
   locale = 'fr',
 }: Args & { locale: Locales }) => {
   const remainingTime = formatRemainingTime(new Date(expirationDate), locale)
@@ -25,8 +25,14 @@ const Template = ({
         <Text className="text-xl font-bold text-center">
           <FormattedMessage id="title" />
         </Text>
-        <Text className="text-base whitespace-pre-line text-text-primary">
-          <FormattedMessage id="content" values={{ deviceName }} />
+        <Text className="text-base text-text-primary">
+          <FormattedMessage id="content1" />
+        </Text>
+        <Text className="text-base text-text-primary">
+          <FormattedMessage id="content2" />
+        </Text>
+        <Text className="text-base text-text-primary">
+          <FormattedMessage id="content3" values={{ deviceName }} />
         </Text>
         <Text className="text-base text-text-primary">
           <FormattedMessage id="codeTitle" />

@@ -13,9 +13,9 @@ type Args = {
 }
 
 const Template = ({
-  adminImportLink,
-  loginPageLink,
-  expirationDate,
+  adminImportLink = '',
+  loginPageLink = '',
+  expirationDate = new Date(),
   locale = 'fr',
 }: Args & { locale: Locales }) => {
   const remainingTime = formatRemainingTime(expirationDate, locale)
@@ -25,8 +25,11 @@ const Template = ({
         <Text className="text-xl font-bold text-center">
           <FormattedMessage id="title" />
         </Text>
-        <Text className="text-base whitespace-pre-line">
-          <FormattedMessage id="content" />
+        <Text className="text-base">
+          <FormattedMessage id="content1" />
+        </Text>
+        <Text className="text-base">
+          <FormattedMessage id="content2" />
         </Text>
         <Button
           href={adminImportLink}
@@ -52,9 +55,12 @@ const Template = ({
         <Text className="text-base">
           <FormattedMessage id="stepTitle" />
         </Text>
-        <Text className="text-base whitespace-pre-line">
+        <Text className="text-base">
+          <FormattedMessage id="step1a" />
+        </Text>
+        <Text className="text-base">
           <FormattedMessage
-            id="step1"
+            id="step1b"
             values={{
               link: (chunks) => (
                 <Link href="https://upsignon.eu/downloads" className="text-link-primary">
@@ -64,8 +70,11 @@ const Template = ({
             }}
           />
         </Text>
-        <Text className="text-base whitespace-pre-line">
-          <FormattedMessage id="step2" />
+        <Text className="text-base">
+          <FormattedMessage id="step2a" />
+        </Text>
+        <Text className="text-base">
+          <FormattedMessage id="step2b" />
         </Text>
         <Text className="text-base text-text-tertiary">
           <FormattedMessage id="footer" />

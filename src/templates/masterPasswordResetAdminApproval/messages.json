@@ -1,22 +1,28 @@
 {
   "fr": {
-    "subject" : "Une personne de votre équipe a besoin d’un coup de pouce pour son mot de passe maître 🔑",
+    "subject": "Une personne de votre équipe a besoin d’un coup de pouce pour son mot de passe maître 🔑",
     "title": "Un oubli de mot de passe ça arrive à tout le monde...",
-    "content": "Bonjour, \n\n L’utilisateur { emailUser } a oublié son mot de passe maître pour son coffre-fort UpSignOn PRO.\n\n Pas de panique, il peut le réinitialiser avec votre aide — <italic>c’est vous qui avez fixé les règles de sécurité pour cette banque, après tout</italic> 👮‍♀️🔐",
+    "content1": "Bonjour,",
+    "content2": "L'utilisateur { emailUser } a oublié son mot de passe maître pour son coffre-fort UpSignOn PRO.",
+    "content3": "Pas de panique, il peut le réinitialiser avec votre aide — <italic>c'est vous qui avez fixé les règles de sécurité pour cette banque, après tout</italic> 👮‍♀️🔐",
     "stepTitle": "Voilà la marche à suivre  :",
     "step1": "1. Se connecter à la console de supervision",
     "step2": "2. Aller sur la page des demandes de réinitialisation de mots de passe",
     "step3": "3. Approuver celle de cet utilisateur",
-    "footer": "Un petit oubli, ça arrive même aux meilleurs 😉\nMerci pour votre réactivité !"
+    "footer1": "Un petit oubli, ça arrive même aux meilleurs 😉",
+    "footer2": "Merci pour votre réactivité !"
   },
   "en": {
-    "subject" : "A team member needs a hand with their master password 🔑",
+    "subject": "A team member needs a hand with their master password 🔑",
     "title": "Forgetting your password happens to everyone...",
-    "content": "Hello,\n\nThe user { emailUser } has forgotten his master password for his UpSignOn PRO vault.\n\nDon't panic, he can reset it with your help — <italic>you have set the security rules for this vault, after all</italic> 👮‍♀️🔐",
+    "content1": "Hello,",
+    "content2": "The user { emailUser } has forgotten his master password for his UpSignOn PRO vault.",
+    "content3": "Don't panic, he can reset it with your help — <italic>you have set the security rules for this vault, after all</italic> 👮‍♀️🔐",
     "stepTitle": "Here are the steps to follow:",
     "step1": "1. Connect to the supervision console",
     "step2": "2. Go to the page of the master password reset requests",
     "step3": "3. Approve the request of this user",
-    "footer": "A little forget, it happens even to the best 😉\nThank you for your reactivity !"
+    "footer1": "A little forget, it happens even to the best 😉",
+    "footer2": "Thank you for your reactivity !"
   }
 }

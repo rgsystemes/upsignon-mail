@@ -1,22 +1,20 @@
 {
   "fr": {
-    "subject": "🚨 Alerte de sécurité - protocole Shamir",
+    "subject": "🚨 Alerte de sécurité - protocole de secours (Shamir)",
     "title1": "Alerte de sécurité",
-    "title2": "Modification non autorisée de la configuration du protocole Shamir",
-    "hello": "Bonjour",
-    "txt1": "Une modification non autorisée de la configuration du protocole de déverrouillage de secours Shamir pour la banque {bankName} a été détectée. (URL de la banque : {bankUrl})",
-    "txt2": "Par mesure de sécurité, la mise-à-jour des sauvegardes de secours a été interrompue pour tous les utilisateurs. Néanmoins, il est possible que des coffres-forts créés récemment puissent avoir été compromis.",
+    "title2": "Modification non autorisée de la configuration du protocole de secours (Shamir)",
+    "txt1": "Une modification non autorisée de la configuration du protocole de déverrouillage de secours Shamir pour la <bold>banque {bankName}</bold> a été détectée. (URL de la banque : {bankUrl})",
+    "txt2": "Par mesure de sécurité, la mise-à-jour des sauvegardes de secours a été interrompue pour tous les utilisateurs mais il est possible que des coffres-forts récemment créés puissent avoir été compromis.",
     "txt3": "Vous trouverez en pièce jointe la chaîne de configurations concernée.",
     "txt4": "Nous vous recommandons de traiter cette alerte dans les plus brefs délais en contactant le support de Septeo IT Solutions."
   },
   "en": {
-    "subject": "🚨 Security Alert - Shamir protocol",
+    "subject": "🚨 Security Alert - fallback protocol (Shamir)",
     "title1": "Security Alert",
-    "title2": "Unauthorized modification of the Shamir protocol configuration",
-    "hello": "Hello",
-    "txt1": "An unauthorized modification to the Shamir fallback unlock protocol configuration has been detected for the bank {bankName}. (Bank URL: {bankUrl})",
-    "txt2": "As a security measure, backup updates have been suspended for all users. However, it is possible that recently created vaults may have been compromised.",
-    "txt3": "Please find the affected configuration chain attached.",
+    "title2": "Unauthorized modification of the fallback protocol (Shamir) configuration",
+    "txt1": "An unauthorized modification to the Shamir fallback recovery protocol configuration has been detected for the <bold>bank {bankName}</bold>. (Bank URL: {bankUrl})",
+    "txt2": "As a security measure, backup updates have been suspended for all users, but it is possible that recently created vaults may have been compromised.",
+    "txt3": "Please find the affected chain of configurations attached.",
     "txt4": "We recommend that you address this alert as soon as possible by contacting Septeo IT Solutions support."
   }
 }

@@ -1,8 +1,8 @@
 import { Column, Row, Section, Text } from '@react-email/components'
 import { FormattedMessage } from 'react-intl'
 
-import { Layout } from '../_partials/layout/index.js'
-import { Locales } from '../index.js'
+import { Layout } from '../../_partials/layout/index.js'
+import { Locales } from '../../index.js'
 import messages from './messages.json' with { type: 'json' }
 
 type Args = {

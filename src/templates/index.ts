@@ -3,7 +3,7 @@ import { templateConfig as newDevice } from './newDevice/index.js'
 import { templateConfig as newDeviceAdminApproval } from './newDeviceAdminApproval/index.js'
 import { templateConfig as proAdminInvitation } from './proAdminInvitation/index.js'
 import { templateConfig as resetPassword } from './resetPassword/index.js'
-import { templateConfig as shamirSecurityAlert } from './shamirSecurityAlert/index.js'
+import { templateConfig as shamirSecurityAlert } from './shamir/shamirSecurityAlert/index.js'
 import { templateConfig as trialWelcome } from './trialWelcome/index.js'
 
 export const registry = {

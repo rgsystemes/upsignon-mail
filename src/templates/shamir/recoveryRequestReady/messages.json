@@ -1,0 +1,18 @@
+{
+  "fr": {
+    "subject": "Votre demande de récupération a été approuvée 🎉",
+    "content1": "Bonjour,",
+    "content2": "Bonne nouvelle : <bold>suffisamment des personnes de confiance ont approuvé votre demande</bold> de récupération de mot de passe 🙌",
+    "content3": "Grâce à leurs validations, nous avons pu reconstituer la clé de sécurité nécessaire.",
+    "content4": "Vous pouvez dès à présent retourner dans votre application pour créer un nouveau mot de passe maitre afin d’accéder de nouveau à votre coffre-fort.",
+    "footer": "Si vous n’êtes pas à l’origine de cette demande, pas de panique : ne validez rien et contactez votre administrateur pour enquêter 🔎 👮️"
+  },
+  "en": {
+    "subject": "Your recovery request has been approved 🎉",
+    "content1": "Hello,",
+    "content2": "Good news: <bold>enough of your trusted contacts have approved your password recovery request</bold> 🙌",
+    "content3": "Thanks to their approvals, we were able to reconstruct the necessary security key.",
+    "content4": "You can now return to your application to create a new master password and regain access to your vault.",
+    "footer": "If you did not initiate this request, don't worry: do not validate anything and contact your administrator to investigate 🔎 👮"
+  }
+}

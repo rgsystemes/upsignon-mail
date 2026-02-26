@@ -1,0 +1,30 @@
+{
+  "fr": {
+    "subject": "Une demande d’approbation vous attend 🔐",
+    "content1": "Bonjour,",
+    "content2a": "Vous faites partie des personnes de confiance désignées dans le protocole de déverrouillage de secours : Shamir.",
+    "content2b": "<bold>Nous vous informons qu’une demande de récupération de mot de passe vient d’être initiée.</bold>",
+    "content3": "<bold>{vaultEmail}</bold> a besoin de votre aide",
+    "content4": "EXPIRATION DE LA DEMANDE : {remainingDays} JOURS RESTANTS (JUSQU'AU {expiryDate})",
+    "content5": "<em>Date de la demande : {requestDate}</em>",
+    "content6": "<em>Depuis l'appareil : {device} (type {deviceType})</em>",
+    "content7": "Votre rôle est simple : <bold>examiner la demande en effectuant les vérifications nécessaires puis l’approuver (ou non) depuis votre application UpSignOn.</bold>",
+    "content8": "Votre approbation contribuera à reconstituer la clé de sécurité permettant à l’utilisateur de déverrouiller de nouveau son coffre-fort.",
+    "content9": "Pour rappel : votre clé partielle est chiffrée, invisible pour tous, et vous ne partagez jamais d’informations sensibles. Vous ne faites qu’autoriser l’utilisation de votre fragment — un peu comme prêter votre super-pouvoir, mais en version ultra sécurisée 🛡️✨",
+    "content10": "Merci d’avance pour votre aide !"
+  },
+  "en": {
+    "subject": "An approval request is waiting for you 🔐",
+    "content1": "Hello,",
+    "content2a": "You are one of the trusted contacts designated in the Shamir fallback unlock protocol.",
+    "content2b": "<bold>We inform you that a password recovery request has just been initiated.</bold>",
+    "content3": "<bold>{vaultEmail}</bold> needs your help",
+    "content4": "REQUEST EXPIRATION: {remainingDays} DAYS LEFT (UNTIL {expiryDate})",
+    "content5": "<em>Request date: {requestDate}</em>",
+    "content6": "<em>From device: {device} (type {deviceType})</em>",
+    "content7": "Your role is simple: <bold>review the request by performing the necessary checks, then approve (or not) from your UpSignOn app.</bold>",
+    "content8": "Your approval will help reconstruct the security key allowing the user to unlock their vault again.",
+    "content9": "Reminder: your partial key is encrypted, invisible to everyone, and you never share any sensitive information. You are only authorizing the use of your fragment — a bit like lending your superpower, but ultra-secure 🛡️✨",
+    "content10": "Thank you in advance for your help!"
+  }
+}

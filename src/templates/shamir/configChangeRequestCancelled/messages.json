@@ -1,0 +1,16 @@
+{
+  "fr": {
+    "subject": "La mise à jour du protocole Shamir a été annulée ⚠️",
+    "content1": "Bonjour,",
+    "content2": "Nous vous informons que la proposition de modification du <bold>protocole de déverrouillage de secours {shamirConfigName} initiée par {creatorEmail} a été annulée.</bold>",
+    "content3": "Aucune action n’est donc requise de votre part, et le protocole actuel reste inchangé 🔒",
+    "content4": "Vos clés partielles restent sécurisées et inutilisées, comme toujours."
+  },
+  "en": {
+    "subject": "The Shamir protocol update has been cancelled ⚠️",
+    "content1": "Hello,",
+    "content2": "We inform you that the proposed change to the <bold>fallback unlock protocol {shamirConfigName} initiated by {creatorEmail} has been cancelled.</bold>",
+    "content3": "No action is required on your part, and the current protocol remains unchanged 🔒",
+    "content4": "Your partial keys remain secure and unused, as always."
+  }
+}

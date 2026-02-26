@@ -1,26 +1,13 @@
 import { Section, Text } from '@react-email/components'
 import { FormattedMessage } from 'react-intl'
 
-import { Layout } from '../_partials/layout/index.js'
-import { Locales } from '../index.js'
+import { Layout } from '../../_partials/layout/index.js'
+import { Locales } from '../../index.js'
 import messages from './messages.json' with { type: 'json' }
 
-type Args = {
-  deviceName: string
-  availableCodeDate: string
-  code: string
-  deviceType: string
-  deviceOSAndVersion: string
-}
+type Args = object
 
-const Template = ({
-  deviceName = "Nom de l'Appareil",
-  availableCodeDate = '',
-  code = 'ABCDEFG123',
-  deviceType = '',
-  deviceOSAndVersion = '',
-  locale = 'fr',
-}: Args & { locale: Locales }) => {
+const Template = async ({ locale = 'fr' }: Args & { locale: Locales }) => {
   return (
     <Layout messages={messages[locale]} locale={locale}>
       <Section className="text-text-primary px-4">
@@ -30,18 +17,24 @@ const Template = ({
         <Text className="text-base">
           <FormattedMessage
             id="content2"
-            values={{ deviceName, deviceType, deviceOSAndVersion }}
+            values={{
+              bold: (chunks) => <span style={{ fontWeight: 'bold' }}>{chunks}</span>,
+            }}
           />
         </Text>
         <Text className="text-base">
           <FormattedMessage id="content3" />
         </Text>
-        <Text className="text-3xl font-bold text-center font-mono">{code}</Text>
-        <Text className="text-base text-center">
-          <FormattedMessage id="availableCode" values={{ availableCodeDate }} />
+        <Text className="text-base">
+          <FormattedMessage
+            id="content4"
+            values={{
+              bold: (chunks) => <span style={{ fontWeight: 'bold' }}>{chunks}</span>,
+            }}
+          />
         </Text>
-        <Text className="text-base text-text-tertiary">
-          <FormattedMessage id="warning" />
+        <Text className="text-base text-[#586081]">
+          <FormattedMessage id="footer" />
         </Text>
       </Section>
     </Layout>

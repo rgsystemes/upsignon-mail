@@ -25,7 +25,7 @@ export const Layout = ({ children, messages, locale }: TLayoutProps) => {
       <Head />
       <IntlProvider messages={mergedMessages} locale={locale}>
         <Tailwind config={tailwindConfig}>
-          <Body>
+          <Body className="font-sans">
             <Container className="bg-white">
               <Header />
               {children}

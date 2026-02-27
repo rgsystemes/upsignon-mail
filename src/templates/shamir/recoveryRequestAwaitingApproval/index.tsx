@@ -9,7 +9,7 @@ type Args = {
   vaultEmail: string
   expiryDate: Date
   requestDate: Date
-  device: string
+  deviceName: string
   deviceType: string
 }
 
@@ -17,7 +17,7 @@ const Template = async ({
   vaultEmail = 'someone@septeo.com',
   expiryDate = new Date(Date.now() + 6 * 24 * 3600 * 1000),
   requestDate = new Date(),
-  device = '[Device name]',
+  deviceName = '[Device name]',
   deviceType = '[Device type]',
   locale = 'fr',
 }: Args & { locale: Locales }) => {
@@ -79,7 +79,7 @@ const Template = async ({
           <FormattedMessage
             id="content6"
             values={{
-              device,
+              deviceName,
               deviceType,
               em: (chunks) => <em>{chunks}</em>,
             }}

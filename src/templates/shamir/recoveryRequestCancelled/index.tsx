@@ -6,11 +6,11 @@ import { Locales } from '../../index.js'
 import messages from './messages.json' with { type: 'json' }
 
 type Args = {
-  userEmail: string
+  vaultEmail: string
 }
 
 const Template = async ({
-  userEmail = 'someone@septeo.com',
+  vaultEmail = 'someone@septeo.com',
   locale = 'fr',
 }: Args & { locale: Locales }) => {
   return (
@@ -23,7 +23,7 @@ const Template = async ({
           <FormattedMessage
             id="content2"
             values={{
-              userEmail,
+              vaultEmail,
               bold: (chunks) => <span style={{ fontWeight: 'bold' }}>{chunks}</span>,
             }}
           />

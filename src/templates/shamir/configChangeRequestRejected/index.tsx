@@ -6,11 +6,11 @@ import { Locales } from '../../index.js'
 import messages from './messages.json' with { type: 'json' }
 
 type Args = {
-  shamirConfigName: string
+  currentShamirConfigName: string
 }
 
 const Template = async ({
-  shamirConfigName = 'Shamir N',
+  currentShamirConfigName = 'Shamir 1',
   locale = 'fr',
 }: Args & { locale: Locales }) => {
   return (
@@ -23,7 +23,7 @@ const Template = async ({
           <FormattedMessage
             id="content2"
             values={{
-              shamirConfigName,
+              currentShamirConfigName,
               bold: (chunks) => <span style={{ fontWeight: 'bold' }}>{chunks}</span>,
             }}
           />

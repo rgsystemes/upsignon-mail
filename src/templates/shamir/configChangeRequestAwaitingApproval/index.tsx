@@ -9,12 +9,14 @@ type Args = {
   creatorEmail: string
   shamirConfigName: string
   minApprovers: number
+  bankName: string
 }
 
 const Template = async ({
   creatorEmail = 'someone@septeo.com',
   shamirConfigName = 'Shamir N',
   minApprovers = 2,
+  bankName = 'TEST BANK',
   locale = 'fr',
 }: Args & { locale: Locales }) => {
   return (
@@ -22,6 +24,15 @@ const Template = async ({
       <Section className="text-text-primary px-4">
         <Text className="text-base">
           <FormattedMessage id="content1" />
+        </Text>
+        <Text className="text-base">
+          <FormattedMessage
+            id="bank"
+            values={{
+              bankName,
+              bold: (chunks) => <span style={{ fontWeight: 'bold' }}>{chunks}</span>,
+            }}
+          />
         </Text>
         <Text className="text-base">
           <FormattedMessage

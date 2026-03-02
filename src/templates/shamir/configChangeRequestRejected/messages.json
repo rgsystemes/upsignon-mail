@@ -2,6 +2,7 @@
   "fr": {
     "subject": "La mise à jour du protocole Shamir a été rejetée ❌",
     "content1": "Bonjour,",
+    "bank": "Concernant la banque : <bold>{bankName}</bold>",
     "content2": "Nous vous informons que la proposition de modification du protocole de déverrouillage de secours {currentShamirConfigName} <bold>n’a pas été approuvée par les personnes de confiance désignées</bold>.",
     "content3": "Sans le nombre d’approbations requis, le nouveau protocole ne peut pas être validé et le protocole actuel reste inchangé 🔒",
     "content4": "Si nécessaire, il est possible de proposer une nouvelle modification ou contacter les personnes de confiance pour clarifier la situation 🔄",
@@ -10,6 +11,7 @@
   "en": {
     "subject": "The Shamir protocol update has been rejected ❌",
     "content1": "Hello,",
+    "bank": "About the bank: <bold>{bankName}</bold>",
     "content2": "We inform you that the proposed change to the fallback unlock protocol {currentShamirConfigName} <bold>was not approved by the designated trusted contacts</bold>.",
     "content3": "Without the required number of approvals, the new protocol cannot be validated and the current protocol remains unchanged 🔒",
     "content4": "If necessary, a new change can be proposed or you can contact the trusted contacts to clarify the situation 🔄",

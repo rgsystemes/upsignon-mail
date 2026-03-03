@@ -37,7 +37,7 @@ const Template = ({
           <FormattedMessage id="content3" />
         </Text>
         <Text className="text-3xl font-bold text-center">{code}</Text>
-        <Text className="text-base text-center">
+        <Text className="text-base font-bold text-center">
           <FormattedMessage id="availableCode" values={{ availableCodeDate }} />
         </Text>
         <Text className="text-base text-text-tertiary">

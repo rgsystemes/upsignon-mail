@@ -48,6 +48,9 @@ const Template = ({ emailUser = '', locale = 'fr' }: Args & { locale: Locales })
           <FormattedMessage id="step3" />
         </Text>
         <Text className="text-base">
+          <FormattedMessage id="step4" />
+        </Text>
+        <Text className="text-base">
           <FormattedMessage id="footer1" />
         </Text>
         <Text className="text-base">

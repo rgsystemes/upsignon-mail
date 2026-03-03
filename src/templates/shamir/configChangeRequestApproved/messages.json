@@ -1,0 +1,20 @@
+{
+  "fr": {
+    "subject": "La mise à jour du protocole Shamir a été validée ✅",
+    "content1": "Bonjour,",
+    "bank": "Concernant la banque : <bold>{bankName}</bold>",
+    "content2": "La proposition de modification du protocole de déverrouillage de secours {currentShamirConfigName} <bold>a été approuvée</bold> par au moins {nbApprovers} des personnes de confiance pour ce protocole ✅",
+    "content3": "Le nouveau protocole {nextShamirConfigName} est désormais actif.",
+    "content4": "ℹ️ <bold>À noter :</bold> ce nouveau protocole ne sera pris en compte par les coffres-forts qu'à leur prochain déverrouillage. D'ici là, les coffres-forts restent protégés par le protocole précédent.",
+    "content5": "Merci pour votre implication dans le renforcement de la sécurité et la gestion des accès 🔐"
+  },
+  "en": {
+    "subject": "The Shamir protocol update has been approved ✅",
+    "content1": "Hello,",
+    "bank": "About the bank: <bold>{bankName}</bold>",
+    "content2": "The proposed change to the fallback unlock protocol {currentShamirConfigName} <bold>has been approved</bold> by at least {nbApprovers} of the trusted contacts for that protocol ✅",
+    "content3": "The new protocol {nextShamirConfigName} is now active.",
+    "content4": "ℹ️ <bold>Note:</bold> this new protocol will only be taken into account by vaults at their next unlock. Until then, vaults remain protected by the previous protocol.",
+    "content5": "Thank you for your involvement in strengthening security and managing access 🔐"
+  }
+}

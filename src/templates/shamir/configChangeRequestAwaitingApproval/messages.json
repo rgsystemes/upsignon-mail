@@ -1,0 +1,22 @@
+{
+  "fr": {
+    "subject": "Une mise à jour du protocole Shamir nécessite votre approbation 🔄",
+    "content1": "Bonjour,",
+    "bank": "Concernant la banque : <bold>{bankName}</bold>",
+    "content2": "<bold>{creatorEmail} a proposé une modification du protocole</bold> de déverrouillage de secours actuel {shamirConfigName}",
+    "content3": "Cette mise à jour implique une nouvelle configuration, <bold>nous avons besoin de votre approbation</bold> et des autres personnes de confiance pour que ce nouveau protocole soit mis en place ✅",
+    "content4": "Votre rôle reste simple : examiner la proposition et l’approuver (ou non) depuis votre application UpSignOn.",
+    "content5": "Si au moins {minApprovers} personnes de confiance du protocole de déverrouillage de secours actuel approuvent la demande alors le nouveau protocole sera validé.",
+    "content6": "Merci d’avance pour votre réactivité et votre vigilance."
+  },
+  "en": {
+    "subject": "A Shamir protocol update requires your approval 🔄",
+    "content1": "Hello,",
+    "bank": "About the bank: <bold>{bankName}</bold>",
+    "content2": "<bold>{creatorEmail} has proposed a change to the current fallback unlock protocol</bold> {shamirConfigName}",
+    "content3": "This update involves a new configuration, <bold>we need your approval</bold> and that of the other trusted contacts for this new protocol to be implemented ✅",
+    "content4": "Your role remains simple: review the proposal and approve (or not) from your UpSignOn app.",
+    "content5": "If at least {minApprovers} trusted contacts from the current fallback unlock protocol approve the request, the new protocol will be validated.",
+    "content6": "Thank you in advance for your responsiveness and vigilance."
+  }
+}

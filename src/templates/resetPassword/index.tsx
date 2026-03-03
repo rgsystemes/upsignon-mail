@@ -14,7 +14,7 @@ type Args = {
 
 const Template = ({
   deviceName = '',
-  code = '',
+  code = 'AZERTYUIOP123456',
   expirationDate = '',
   locale = 'fr',
 }: Args & { locale: Locales }) => {
@@ -37,7 +37,7 @@ const Template = ({
         <Text className="text-base text-text-primary">
           <FormattedMessage id="codeTitle" />
         </Text>
-        <Text className="text-3xl font-bold text-center">{code}</Text>
+        <Text className="text-3xl font-bold text-center font-mono">{code}</Text>
         <Text className="text-base text-center text-text-secondary">
           <FormattedMessage id="expiration" values={{ deviceName, remainingTime }} />
         </Text>

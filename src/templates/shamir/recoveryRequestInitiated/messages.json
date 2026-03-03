@@ -1,0 +1,22 @@
+{
+  "fr": {
+    "subject": "Votre demande de récupération de mot de passe a été envoyée 🚀",
+    "content1": "Bonjour,",
+    "content2": "Bonne nouvelle : <bold>votre demande de récupération de mot de passe a été transmise aux personnes de confiance</bold> ✅",
+    "content3": "Chacune d’entre elles a reçu une notification et pourra approuver votre demande pour vous aider à retrouver l’accès à votre coffre-fort.",
+    "content4": "De votre côté, il ne vous reste plus qu’à patienter tranquillement ☕",
+    "content5": "Dès que le nombre d’approbations requis sera atteint, nous vous enverrons une confirmation, vous pourrez alors créer un nouveau mot de passe maitre 🔓",
+    "content6": "<bold>Aucune autre action n’est nécessaire pour le moment.</bold>",
+    "footer": "Si vous n’êtes pas à l’origine de cette demande, pas de panique : contactez votre administrateur pour enquêter 🔎 👮"
+  },
+  "en": {
+    "subject": "Your password recovery request has been sent 🚀",
+    "content1": "Hello,",
+    "content2": "Good news: <bold>your password recovery request has been forwarded to the trusted persons</bold> ✅",
+    "content3": "Each of them has received a notification and can approve your request to help you regain access to your vault.",
+    "content4": "All you have to do now is wait patiently ☕",
+    "content5": "As soon as the required number of approvals is reached, we will send you a confirmation and you will be able to create a new master password 🔓",
+    "content6": "<bold>No further action is required at this time.</bold>",
+    "footer": "If you did not initiate this request, don't worry: contact your administrator to investigate 🔎 👮"
+  }
+}

@@ -20,6 +20,9 @@ export default {
           primary: '#366CFC',
         },
       },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
     },
   },
 }

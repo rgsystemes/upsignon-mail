@@ -7,18 +7,18 @@ import { Locales } from '../index.js'
 import messages from './messages.json' with { type: 'json' }
 
 type Args = {
-  activationLink: string
+  bankSetupUrl: string
   consoleLink: string
   userEmail: string
 }
 
 const Template = async ({
-  activationLink = 'default',
+  bankSetupUrl = 'default',
   consoleLink = '',
   userEmail = '',
   locale = 'fr',
 }: Args & { locale: Locales }) => {
-  const qrCodeDataUrl = await generateQRCode(activationLink)
+  const qrCodeDataUrl = await generateQRCode(bankSetupUrl)
   return (
     <Layout messages={messages[locale]} locale={locale}>
       <Section className="text-text-primary px-4">
@@ -37,7 +37,7 @@ const Template = async ({
               id="step1Link"
               values={{
                 link: (chunks) => (
-                  <Link href={activationLink} className="text-link-primary">
+                  <Link href={bankSetupUrl} className="text-link-primary">
                     {chunks}
                   </Link>
                 ),

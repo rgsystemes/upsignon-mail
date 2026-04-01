@@ -1,0 +1,30 @@
+{
+    "fr": {
+        "subject": "Une personne de votre équipe a besoin d’un coup de pouce pour son mot de passe maître 🔑",
+        "title": "Un oubli de mot de passe ça arrive à tout le monde...",
+        "content1": "Bonjour,",
+        "content2": "L'utilisateur { emailUser } a oublié son mot de passe maître pour son coffre-fort UpSignOn PRO.",
+        "content3": "Pas de panique, il peut le réinitialiser avec votre aide — <italic>c'est vous qui avez fixé les règles de sécurité pour cette banque, après tout</italic> 👮‍♀️🔐",
+        "stepTitle": "Voilà la marche à suivre  :",
+        "step1": "1. Confirmer que l’utilisateur est bien l'initiateur de la demande de réinitialisation. En cas de doute de validez pas cette demande.",
+        "step2": "2. Se connecter à la console de supervision",
+        "step3": "3. Aller sur la page des demandes de réinitialisation de mots de passe",
+        "step4": "4. Approuver celle de cet utilisateur",
+        "footer1": "Un petit oubli, ça arrive même aux meilleurs 😉",
+        "footer2": "Merci pour votre réactivité !"
+    },
+    "en": {
+        "subject": "A team member needs a hand with their master password 🔑",
+        "title": "Forgetting your password happens to everyone...",
+        "content1": "Hello,",
+        "content2": "The user { emailUser } has forgotten his master password for his UpSignOn PRO vault.",
+        "content3": "Don't panic, he can reset it with your help — <italic>you have set the security rules for this vault, after all</italic> 👮‍♀️🔐",
+        "stepTitle": "Here are the steps to follow:",
+        "step1": "1. Confirm that the user is indeed the initiator of the reset request. If in doubt, do not approve this request.",
+        "step2": "2. Connect to the supervision console",
+        "step3": "3. Go to the password reset requests page",
+        "step4": "4. Approve the request for this user",
+        "footer1": "A little forget, it happens even to the best 😉",
+        "footer2": "Thank you for your reactivity !"
+    }
+}

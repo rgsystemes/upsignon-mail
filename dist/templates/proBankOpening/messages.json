@@ -1,0 +1,30 @@
+{
+    "fr": {
+        "subject": "Ouverture de votre banque UpSignOn Pro",
+        "hello": "Bonjour,",
+        "content1": "Merci d'avoir choisi notre solution UpSignOn Pro pour la gestion de vos mots de passe ⭐",
+        "step1Title": "Etape 1 : Comment ouvrir vos coffres-forts ?",
+        "step1Link": "Vous pouvez suivre les instructions en <link>cliquant ici</link>.",
+        "step1QrCode": "Ou bien scanner le QR Code suivant :",
+        "step2Title": "Etape 2 : Accéder à la console de supervision",
+        "step2Content": "Saisissez votre adresse email <bold>{ userEmail }</bold> sur la page de connexion de la console.",
+        "button": "Accéder à la console de supervision",
+        "support": "Si vous avez des questions, notre <link>support</link> est à votre disposition pour vous aider.",
+        "footer1": "Bonne journée,",
+        "footer2": "Cordialement"
+    },
+    "en": {
+        "subject": "Opening of your UpSignOn Pro bank",
+        "hello": "Hello,",
+        "content1": "Thank you for choosing our UpSignOn Pro solution for managing your passwords ⭐",
+        "step1Title": "Step 1: How to open your vaults?",
+        "step1Link": "You can follow the instructions by <link>clicking here</link>.",
+        "step1QrCode": "Or scan the following QR Code:",
+        "step2Title": "Step 2: Access the supervision console",
+        "step2Content": "Enter your email address <bold>{ userEmail }</bold> on the console login page.",
+        "button": "Access the supervision console",
+        "support": "If you have any questions, our <link>support</link> team is available to help you.",
+        "footer1": "Have a great day,",
+        "footer2": "Best regards"
+    }
+}

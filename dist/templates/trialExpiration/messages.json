@@ -1,0 +1,36 @@
+{
+    "fr": {
+        "subject": "Expiration des trials UpSignOn",
+        "hello": "Bonjour,",
+        "sectionExpired": "Expirés",
+        "section7Days": "Dans les 7 prochains jours",
+        "section14Days": "Dans les 14 prochains jours",
+        "unassigned": "Non attribués",
+        "colId": "ID",
+        "colName": "Nom de la banque",
+        "colReseller": "Nom MSP",
+        "colNbUsers": "Nombre de coffres",
+        "colCreatedAt": "Date de création",
+        "colExpiredDays": "Jours d'expiration",
+        "colRemainingDays": "Jours de tests restants",
+        "footer1": "Bonne journée,",
+        "footer2": "Cordialement"
+    },
+    "en": {
+        "subject": "UpSignOn trials expiration",
+        "hello": "Hello,",
+        "sectionExpired": "Expired",
+        "section7Days": "In the next 7 days",
+        "section14Days": "In the next 14 days",
+        "unassigned": "Unassigned",
+        "colId": "ID",
+        "colName": "Bank name",
+        "colReseller": "MSP name",
+        "colNbUsers": "Number of vaults",
+        "colCreatedAt": "Creation date",
+        "colExpiredDays": "Days of expiration",
+        "colRemainingDays": "Remaining test days",
+        "footer1": "Have a great day,",
+        "footer2": "Best regards"
+    }
+}

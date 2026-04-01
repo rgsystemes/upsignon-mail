@@ -1,0 +1,22 @@
+{
+    "fr": {
+        "subject": "Vous êtes invité en tant qu'administrateur sur la console ADV UpSignOn",
+        "hello": "Bonjour,",
+        "content1": "Bienvenue à bord !",
+        "content2": "Pour accéder à la console ADV UpSignOn c'est par ici :",
+        "button": "Accéder à la console ADV",
+        "expiration": "⏳ Cette invitation expirera le { expirationDate } — alors ne traînez pas trop !",
+        "footer1": "Bonne journée,",
+        "footer2": "Cordialement"
+    },
+    "en": {
+        "subject": "You are invited as an administrator on the UpSignOn ADV console",
+        "hello": "Hello,",
+        "content1": "Welcome aboard!",
+        "content2": "To access the UpSignOn ADV console, click here:",
+        "button": "Access the ADV console",
+        "expiration": "⏳ This invitation will expire on { expirationDate } — so don't wait too long!",
+        "footer1": "Have a great day,",
+        "footer2": "Best regards"
+    }
+}

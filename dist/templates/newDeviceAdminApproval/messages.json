@@ -1,0 +1,24 @@
+{
+    "fr": {
+        "subject": "Nouvelle demande d’autorisation d’un appareil en attente ✅",
+        "title": "Un membre de votre équipe a besoin de vous !",
+        "content1": "Bonjour,",
+        "content2": "L'utilisateur { emailUser } souhaite autoriser un nouvel appareil.",
+        "content3": "Comme cette personne a déjà un appareil autorisé (ou en cours d'autorisation), votre accord est nécessaire pour valider cette nouvelle demande — <italic>c'est vous qui avez fixé les règles de sécurité pour cette banque, après tout</italic> 👮‍♀️🔐",
+        "stepTitle": "Voilà la marche à suivre  :",
+        "step1": "1. Se connecter à la console de supervision",
+        "step2": "2. Aller sur la page des utilisateurs",
+        "step3": "3. Ouvrir la liste des appareils et cliquer sur \"Autoriser\" pour cet appareil"
+    },
+    "en": {
+        "subject": "New device authorization request pending ✅",
+        "title": "Your team member needs you!",
+        "content1": "Hello,",
+        "content2": "The user { emailUser } wants to authorize a new device.",
+        "content3": "Since this person already has an authorized device (or is in the process of being authorized), your approval is necessary to validate this new request — <italic>you have set the security rules for this vault, after all</italic> 👮‍♀️🔐",
+        "stepTitle": "Here's the steps to follow:",
+        "step1": "1. Connect to the supervision console",
+        "step2": "2. Go to the page of the users",
+        "step3": "3. Open the list of devices and click \"Authorize\" for this device"
+    }
+}

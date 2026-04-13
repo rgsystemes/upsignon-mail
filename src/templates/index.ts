@@ -18,6 +18,7 @@ import { templateConfig as recoveryRequestReady } from './shamir/recoveryRequest
 import { templateConfig as shamirSecurityAlert } from './shamir/shamirSecurityAlert/index.js'
 import { templateConfig as trialExpiration } from './trialExpiration/index.js'
 import { templateConfig as trialWelcome } from './trialWelcome/index.js'
+import { templateConfig as vaultPublicKeysSecurityAlert } from './vaultPublicKeysSecurityAlert/index.js'
 
 export const registry = {
   advAdminInvitation,
@@ -40,6 +41,7 @@ export const registry = {
   recoveryRequestInitiated,
   recoveryRequestReady,
   shamirSecurityAlert,
+  vaultPublicKeysSecurityAlert,
 } as const
 
 export type TemplateName = keyof typeof registry

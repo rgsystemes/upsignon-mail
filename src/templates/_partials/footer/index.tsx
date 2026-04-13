@@ -13,7 +13,7 @@ export const Footer = () => {
         <FormattedMessage id="footerContent" />
       </Text>
       <Link
-        href="mailto:BS-SEPTEOITSOLUTIONS-Support@septeo.com"
+        href="mailto:help-itsolutions@septeo.com"
         className="text-white text-base underline"
       >
         <FormattedMessage id="footerLink" />

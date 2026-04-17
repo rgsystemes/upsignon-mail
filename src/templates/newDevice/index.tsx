@@ -11,7 +11,7 @@ import messages from './messages.json' with { type: 'json' }
 
 type Args = {
   deviceName: string
-  expirationDate: string
+  expirationDate: Date
   code: string
   deviceType: string
   deviceOSAndVersion: string
@@ -19,14 +19,13 @@ type Args = {
 
 const Template = ({
   deviceName = "Nom de l'Appareil",
-  expirationDate = new Date().toISOString(),
+  expirationDate = new Date(),
   code = 'AIOL-01234',
   deviceType = 'macOS',
   deviceOSAndVersion = 'OX13',
   locale = 'fr',
   ianaTimezone = 'Europe/Paris',
 }: Args & { locale: Locales; ianaTimezone?: string }) => {
-  const expDate = new Date(expirationDate)
   return (
     <Layout messages={messages[locale]} locale={locale}>
       <Section className="text-text-primary px-4">
@@ -47,8 +46,16 @@ const Template = ({
           <FormattedMessage
             id="availableCode"
             values={{
-              expirationDate: formatDateWithMonthName(expDate, locale, ianaTimezone),
-              expirationTime: formatTimeWithTimezone(expDate, locale, ianaTimezone),
+              expirationDate: formatDateWithMonthName(
+                expirationDate,
+                locale,
+                ianaTimezone,
+              ),
+              expirationTime: formatTimeWithTimezone(
+                expirationDate,
+                locale,
+                ianaTimezone,
+              ),
             }}
           />
         </Text>

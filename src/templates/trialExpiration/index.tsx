@@ -12,7 +12,7 @@ type Trial = {
   name: string
   reseller: string
   nbUsers: number
-  createdAt: string
+  createdAt: Date
   remainingDays: number
 }
 
@@ -73,7 +73,7 @@ const TrialsTable = ({
               <td style={{ padding: '8px', textAlign: 'center' }}>{trial.reseller}</td>
               <td style={{ padding: '8px', textAlign: 'center' }}>{trial.nbUsers}</td>
               <td style={{ padding: '8px', textAlign: 'center' }}>
-                {formatDateWithMonthName(new Date(trial.createdAt), locale, ianaTimezone)}
+                {formatDateWithMonthName(trial.createdAt, locale, ianaTimezone)}
               </td>
               <td
                 style={{

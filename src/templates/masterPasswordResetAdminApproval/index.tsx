@@ -9,7 +9,10 @@ type Args = {
   emailUser: string
 }
 
-const Template = ({ emailUser = '', locale = 'fr' }: Args & { locale: Locales }) => {
+const Template = ({
+  emailUser = 'someone@septeo.com',
+  locale = 'fr',
+}: Args & { locale: Locales }) => {
   return (
     <Layout messages={messages[locale]} locale={locale}>
       <Section className="text-text-primary px-4">
@@ -24,6 +27,7 @@ const Template = ({ emailUser = '', locale = 'fr' }: Args & { locale: Locales })
             id="content2"
             values={{
               emailUser,
+              bold: (chunks) => <span style={{ fontWeight: 'bold' }}>{chunks}</span>,
             }}
           />
         </Text>

@@ -1,13 +1,17 @@
 import { Section, Text } from '@react-email/components'
 import { FormattedMessage } from 'react-intl'
 
+import {
+  formatDateWithMonthName,
+  formatTimeWithTimezone,
+} from '../../helpers/formatDateTime.js'
 import { Layout } from '../_partials/layout/index.js'
 import { Locales } from '../index.js'
 import messages from './messages.json' with { type: 'json' }
 
 type Args = {
   deviceName: string
-  availableCodeDate: string
+  expirationDate: string
   code: string
   deviceType: string
   deviceOSAndVersion: string
@@ -15,12 +19,14 @@ type Args = {
 
 const Template = ({
   deviceName = "Nom de l'Appareil",
-  availableCodeDate = '',
-  code = 'ABCDEFG123',
-  deviceType = '',
-  deviceOSAndVersion = '',
+  expirationDate = new Date().toISOString(),
+  code = 'AIOL-01234',
+  deviceType = 'macOS',
+  deviceOSAndVersion = 'OX13',
   locale = 'fr',
-}: Args & { locale: Locales }) => {
+  ianaTimezone = 'Europe/Paris',
+}: Args & { locale: Locales; ianaTimezone?: string }) => {
+  const expDate = new Date(expirationDate)
   return (
     <Layout messages={messages[locale]} locale={locale}>
       <Section className="text-text-primary px-4">
@@ -38,7 +44,13 @@ const Template = ({
         </Text>
         <Text className="text-3xl font-bold text-center font-mono">{code}</Text>
         <Text className="text-base font-bold text-center">
-          <FormattedMessage id="availableCode" values={{ availableCodeDate }} />
+          <FormattedMessage
+            id="availableCode"
+            values={{
+              expirationDate: formatDateWithMonthName(expDate, locale, ianaTimezone),
+              expirationTime: formatTimeWithTimezone(expDate, locale, ianaTimezone),
+            }}
+          />
         </Text>
         <Text className="text-base text-text-tertiary">
           <FormattedMessage id="warning" />

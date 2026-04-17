@@ -13,9 +13,9 @@ type Args = {
 }
 
 const Template = ({
-  deviceName = '',
+  deviceName = 'Device Name',
   code = 'AZERTYUIOP123456',
-  expirationDate = '',
+  expirationDate = new Date().toISOString(),
   locale = 'fr',
 }: Args & { locale: Locales }) => {
   const remainingTime = formatRemainingTime(new Date(expirationDate), locale)

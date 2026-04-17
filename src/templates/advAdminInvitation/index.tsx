@@ -1,6 +1,10 @@
 import { Button, Section, Text } from '@react-email/components'
 import { FormattedMessage } from 'react-intl'
 
+import {
+  formatDateWithMonthName,
+  formatTimeWithTimezone,
+} from '../../helpers/formatDateTime.js'
 import { Layout } from '../_partials/layout/index.js'
 import { Locales } from '../index.js'
 import messages from './messages.json' with { type: 'json' }
@@ -11,10 +15,11 @@ type Args = {
 }
 
 const Template = ({
-  consoleLink = 'default',
+  consoleLink = 'https://app.upsignon.eu/dashboard',
   expirationDate = new Date(),
   locale = 'fr',
-}: Args & { locale: Locales }) => {
+  ianaTimezone = 'Europe/Paris',
+}: Args & { locale: Locales; ianaTimezone?: string }) => {
   return (
     <Layout messages={messages[locale]} locale={locale}>
       <Section className="text-text-primary px-4">
@@ -36,7 +41,18 @@ const Template = ({
         <Text className="text-base">
           <FormattedMessage
             id="expiration"
-            values={{ expirationDate: expirationDate.toLocaleDateString(locale) }}
+            values={{
+              expirationDate: formatDateWithMonthName(
+                expirationDate,
+                locale,
+                ianaTimezone,
+              ),
+              expirationTime: formatTimeWithTimezone(
+                expirationDate,
+                locale,
+                ianaTimezone,
+              ),
+            }}
           />
         </Text>
         <Text className="text-base">

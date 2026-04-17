@@ -1,6 +1,10 @@
 import { Section, Text } from '@react-email/components'
 import { FormattedMessage } from 'react-intl'
 
+import {
+  formatDateWithMonthName,
+  formatTimeWithTimezone,
+} from '../../../helpers/formatDateTime.js'
 import { Layout } from '../../_partials/layout/index.js'
 import { Locales } from '../../index.js'
 import messages from './messages.json' with { type: 'json' }
@@ -17,20 +21,14 @@ const Template = async ({
   vaultEmail = 'someone@septeo.com',
   expiryDate = new Date(Date.now() + 6 * 24 * 3600 * 1000),
   requestDate = new Date(),
-  deviceName = '[Device name]',
-  deviceType = '[Device type]',
+  deviceName = 'Device name',
+  deviceType = 'Device type',
   locale = 'fr',
-}: Args & { locale: Locales }) => {
+  ianaTimezone = 'Europe/Paris',
+}: Args & { locale: Locales; ianaTimezone?: string }) => {
   const remainingDays =
     (expiryDate.getTime() - requestDate.getTime()) / (1000 * 24 * 3600)
-  const dateFormatter = Intl.DateTimeFormat(locale, {
-    year: 'numeric',
-    month: 'numeric',
-    day: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-    hour12: false,
-  })
+
   return (
     <Layout messages={messages[locale]} locale={locale}>
       <Section className="text-text-primary px-4">
@@ -62,7 +60,8 @@ const Template = async ({
               id="content4"
               values={{
                 remainingDays,
-                expiryDate: dateFormatter.format(expiryDate),
+                expiryDate: formatDateWithMonthName(expiryDate, locale, ianaTimezone),
+                expiryTime: formatTimeWithTimezone(expiryDate, locale, ianaTimezone),
               }}
             />
           </Text>
@@ -71,7 +70,8 @@ const Template = async ({
           <FormattedMessage
             id="content5"
             values={{
-              requestDate: dateFormatter.format(requestDate),
+              requestDate: formatDateWithMonthName(requestDate, locale, ianaTimezone),
+              requestTime: formatTimeWithTimezone(requestDate, locale, ianaTimezone),
               em: (chunks) => <em>{chunks}</em>,
             }}
           />

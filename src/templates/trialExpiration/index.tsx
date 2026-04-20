@@ -2,6 +2,7 @@ import { Section, Text } from '@react-email/components'
 import { useIntl } from 'react-intl'
 import { FormattedMessage } from 'react-intl'
 
+import { formatDateWithMonthName } from '../../helpers/formatDateTime.js'
 import { Layout } from '../_partials/layout/index.js'
 import { Locales } from '../index.js'
 import messages from './messages.json' with { type: 'json' }
@@ -11,7 +12,7 @@ type Trial = {
   name: string
   reseller: string
   nbUsers: number
-  createdAt: string
+  createdAt: Date
   remainingDays: number
 }
 
@@ -30,10 +31,12 @@ const TrialsTable = ({
   trials,
   expiredCase,
   locale,
+  ianaTimezone,
 }: {
   trials: Trial[]
   expiredCase?: boolean
   locale: Locales
+  ianaTimezone: string
 }) => {
   const intl = useIntl()
   return (
@@ -70,7 +73,7 @@ const TrialsTable = ({
               <td style={{ padding: '8px', textAlign: 'center' }}>{trial.reseller}</td>
               <td style={{ padding: '8px', textAlign: 'center' }}>{trial.nbUsers}</td>
               <td style={{ padding: '8px', textAlign: 'center' }}>
-                {new Date(trial.createdAt).toLocaleDateString(locale)}
+                {formatDateWithMonthName(trial.createdAt, locale, ianaTimezone)}
               </td>
               <td
                 style={{
@@ -91,9 +94,11 @@ const TrialsTable = ({
 const SalesSection = ({
   salesTrials,
   locale,
+  ianaTimezone,
 }: {
   salesTrials: SalesTrials
   locale: Locales
+  ianaTimezone: string
 }) => {
   const intl = useIntl()
   const salesName = salesTrials.sales
@@ -106,21 +111,34 @@ const SalesSection = ({
       {salesTrials.expired.length > 0 && (
         <div>
           <span>{intl.formatMessage({ id: 'sectionExpired' })}</span>
-          <TrialsTable trials={salesTrials.expired} expiredCase locale={locale} />
+          <TrialsTable
+            trials={salesTrials.expired}
+            expiredCase
+            locale={locale}
+            ianaTimezone={ianaTimezone}
+          />
           <br />
         </div>
       )}
       {salesTrials.next7Days.length > 0 && (
         <div>
           <span>{intl.formatMessage({ id: 'section7Days' })}</span>
-          <TrialsTable trials={salesTrials.next7Days} locale={locale} />
+          <TrialsTable
+            trials={salesTrials.next7Days}
+            locale={locale}
+            ianaTimezone={ianaTimezone}
+          />
           <br />
         </div>
       )}
       {salesTrials.next14Days.length > 0 && (
         <div>
           <span>{intl.formatMessage({ id: 'section14Days' })}</span>
-          <TrialsTable trials={salesTrials.next14Days} locale={locale} />
+          <TrialsTable
+            trials={salesTrials.next14Days}
+            locale={locale}
+            ianaTimezone={ianaTimezone}
+          />
           <br />
         </div>
       )}
@@ -128,7 +146,11 @@ const SalesSection = ({
   )
 }
 
-const Template = ({ salesTrials = [], locale = 'fr' }: Args & { locale: Locales }) => {
+const Template = ({
+  salesTrials = [],
+  locale = 'fr',
+  ianaTimezone = 'Europe/Paris',
+}: Args & { locale: Locales; ianaTimezone?: string }) => {
   const sorted = [...salesTrials].sort((a, b) => (a.sales < b.sales ? -1 : 1))
   return (
     <Layout messages={messages[locale]} locale={locale}>
@@ -141,6 +163,7 @@ const Template = ({ salesTrials = [], locale = 'fr' }: Args & { locale: Locales 
             key={salesTrials.sales}
             salesTrials={salesTrials}
             locale={locale}
+            ianaTimezone={ianaTimezone}
           />
         ))}
         <Text className="text-base">

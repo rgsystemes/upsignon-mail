@@ -9,16 +9,16 @@ import messages from './messages.json' with { type: 'json' }
 type Args = {
   deviceName: string
   code: string
-  expirationDate: string
+  expirationDate: Date
 }
 
 const Template = ({
-  deviceName = '',
+  deviceName = 'Device Name',
   code = 'AZERTYUIOP123456',
-  expirationDate = '',
+  expirationDate = new Date(),
   locale = 'fr',
 }: Args & { locale: Locales }) => {
-  const remainingTime = formatRemainingTime(new Date(expirationDate), locale)
+  const remainingTime = formatRemainingTime(expirationDate, locale)
   return (
     <Layout messages={messages[locale]} locale={locale}>
       <Section className="text-text-primary px-4">

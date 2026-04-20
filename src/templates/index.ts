@@ -53,5 +53,6 @@ export type AnyMailConfig = {
     templateName: T
     locales: Locales
     args: TemplateArgs<T>
+    ianaTimezone?: string
   }
 }[TemplateName]

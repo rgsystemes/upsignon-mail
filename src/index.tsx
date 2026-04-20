@@ -5,13 +5,15 @@ import { type AnyMailConfig, type TemplateName, registry } from './templates/ind
 export const buildEmail = async <T extends TemplateName>(
   config: AnyMailConfig & { templateName: T },
 ): Promise<{ html: string; text: string; subject: string }> => {
-  const { templateName, locales, args } = config
+  const { templateName, locales, args, ianaTimezone = 'Europe/Paris' } = config
   const template = registry[templateName]
   const { Template, subject } = template
   if (!Template) throw new Error(`Template ${templateName} not found`)
 
-  // @ts-expect-error - Pas le choix :(
-  const html = await render(<Template {...args} locale={locales} />)
+  const html = await render(
+    // @ts-expect-error - Pas le choix :(
+    <Template {...args} locale={locales} ianaTimezone={ianaTimezone} />,
+  )
   const text = toPlainText(html)
 
   return { html, text, subject: subject(locales) }

@@ -1,6 +1,7 @@
 import { Img, Link, Section, Text } from '@react-email/components'
 import { FormattedMessage } from 'react-intl'
 
+import { formatDateWithMonthName } from '../../helpers/formatDateTime.js'
 import { generateQRCode } from '../../helpers/generateQRCode.js'
 import { Layout } from '../_partials/layout/index.js'
 import { Locales } from '../index.js'
@@ -17,7 +18,8 @@ const Template = async ({
   activationLink = 'default',
   consoleLink = '',
   locale = 'fr',
-}: Args & { locale: Locales }) => {
+  ianaTimezone = 'Europe/Paris',
+}: Args & { locale: Locales; ianaTimezone?: string }) => {
   const qrCodeDataUrl = await generateQRCode(activationLink)
   return (
     <Layout messages={messages[locale]} locale={locale}>
@@ -32,7 +34,7 @@ const Template = async ({
           <FormattedMessage
             id="content2"
             values={{
-              trialEndDate: trialEndDate.toLocaleDateString(locale),
+              trialEndDate: formatDateWithMonthName(trialEndDate, locale, ianaTimezone),
               bold: (chunks) => <span style={{ fontWeight: 'bold' }}>{chunks}</span>,
             }}
           />

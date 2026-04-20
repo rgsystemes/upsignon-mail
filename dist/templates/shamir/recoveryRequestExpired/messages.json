@@ -1,0 +1,18 @@
+{
+    "fr": {
+        "subject": "Votre demande de récupération a expiré ⏳",
+        "content1": "Bonjour,",
+        "content2": "<bold>Votre demande de récupération de mot de passe est arrivée à expiration.</bold>",
+        "content3": "Toutes les approbations nécessaires n’ont pas été reçues dans le délai prévu 🕒",
+        "content4": "Pas d’inquiétude : <bold>si vous souhaitez toujours récupérer l’accès à votre compte, vous pouvez simplement relancer une nouvelle demande depuis votre application UpSignOn.</bold>",
+        "footer": "Si vous n’êtes pas à l’origine de cette demande, pas de panique : ne validez rien et contactez votre administrateur pour enquêter 🔎 👮️"
+    },
+    "en": {
+        "subject": "Your recovery request has expired ⏳",
+        "content1": "Hello,",
+        "content2": "<bold>Your password recovery request has expired.</bold>",
+        "content3": "Not all required approvals were received within the allotted time 🕒",
+        "content4": "No worries: <bold>if you still wish to recover access to your account, you can simply start a new request from your UpSignOn app.</bold>",
+        "footer": "If you did not initiate this request, don't worry: do not approve anything and contact your administrator to investigate 🔎 👮️"
+    }
+}

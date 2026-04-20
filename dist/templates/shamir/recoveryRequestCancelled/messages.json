@@ -1,0 +1,16 @@
+{
+    "fr": {
+        "subject": "Une demande de récupération a été annulée ⚠️",
+        "content1": "Bonjour,",
+        "content2": "Nous vous informons que <bold>{vaultEmail} a annulé sa demande de récupération de mot de passe.</bold>",
+        "content3": "<bold>Aucune action n’est donc requise de votre part,</bold> et votre clé partielle reste bien protégée et inutilisée 🔒",
+        "content4": "Merci pour votre vigilance et votre disponibilité !"
+    },
+    "en": {
+        "subject": "A recovery request has been cancelled ⚠️",
+        "content1": "Hello,",
+        "content2": "We inform you that <bold>{vaultEmail} has cancelled their password recovery request.</bold>",
+        "content3": "<bold>No action is required on your part,</bold> and your partial key remains well protected and unused 🔒",
+        "content4": "Thank you for your vigilance and availability!"
+    }
+}

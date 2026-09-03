@@ -16,6 +16,7 @@ import { templateConfig as recoveryRequestExpired } from './shamir/recoveryReque
 import { templateConfig as recoveryRequestInitiated } from './shamir/recoveryRequestInitiated/index.js'
 import { templateConfig as recoveryRequestReady } from './shamir/recoveryRequestReady/index.js'
 import { templateConfig as shamirSecurityAlert } from './shamir/shamirSecurityAlert/index.js'
+import { templateConfig as trialAccountAlreadyExists } from './trialAccountAlreadyExists/index.js'
 import { templateConfig as trialEmailValidation } from './trialEmailValidation/index.js'
 import { templateConfig as trialExpiration } from './trialExpiration/index.js'
 import { templateConfig as trialWelcome } from './trialWelcome/index.js'
@@ -29,6 +30,7 @@ export const registry = {
   proAdminInvitation,
   proBankOpening,
   resetPassword,
+  trialAccountAlreadyExists,
   trialEmailValidation,
   trialExpiration,
   trialWelcome,

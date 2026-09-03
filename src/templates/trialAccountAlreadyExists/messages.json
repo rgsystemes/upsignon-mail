@@ -1,0 +1,18 @@
+{
+  "fr": {
+    "subject": "Vous avez déjà un compte UpSignOn",
+    "title": "Vous avez déjà un compte",
+    "content1": "Bonjour,",
+    "content2": "Une demande d'essai gratuit a été effectuée pour cette adresse email, mais un compte UpSignOn existe déjà pour celle-ci. Vous pouvez accéder à votre console de supervision en cliquant sur le bouton ci-dessous.",
+    "loginButton": "Accéder à la console de supervision",
+    "footer": "Si vous n'êtes pas à l'origine de cette demande, vous pouvez ignorer cet email."
+  },
+  "en": {
+    "subject": "You already have an UpSignOn account",
+    "title": "You already have an account",
+    "content1": "Hello,",
+    "content2": "A free trial request was made for this email address, but an UpSignOn account already exists for it. You can access your supervision console by clicking the button below.",
+    "loginButton": "Access the supervision console",
+    "footer": "If you did not make this request, you can safely ignore this email."
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "fr": {
+        "subject": "Confirmez votre adresse email pour activer votre compte",
+        "title": "Avant de vous lancer...",
+        "content1": "Pour des raisons de sécurité, merci de nous aider à vérifier votre email. Sans vérification de votre adresse email nous ne pourrons aboutir à la création de votre banque.",
+        "activateButton": "Je vérifie mon adresse mail",
+        "stepTitle": "Prochaines étapes :",
+        "step1": "1. On crée votre banque de test",
+        "step2": "2. On vous ajoute comme administrateur,",
+        "step3": "3. Vous recevrez un mail de confirmation, ainsi que les instructions pour créer votre coffre-fort et accéder à la console de supervision."
+    },
+    "en": {
+        "subject": "Confirm your email address to activate your account",
+        "title": "Before you get started...",
+        "content1": "For security reasons, please help us verify your email. Without verifying your email address, we will not be able to proceed with the creation of your bank.",
+        "activateButton": "I verify my email address",
+        "stepTitle": "Next steps:",
+        "step1": "1. We create your test bank",
+        "step2": "2. We add you as an administrator,",
+        "step3": "3. You will receive a confirmation email, along with instructions to create your vault and access the supervision console."
+    }
+}

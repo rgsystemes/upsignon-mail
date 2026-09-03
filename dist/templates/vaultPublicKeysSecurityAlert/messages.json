@@ -1,0 +1,22 @@
+{
+    "fr": {
+        "subject": "🚨 Alerte de sécurité - modification de clé publique",
+        "title1": "Alerte de sécurité",
+        "key_type_sharing": "Partage",
+        "key_type_signing": "Signature",
+        "title2": "Altération de la clé publique de {keyType} d'un utilisateur",
+        "txt1": "La clé publique de {keyType} de l'utilisateur {email} (banque {bankName}, url {bankUrl}) a due être réparée en base de données car sa valeur avait été modifiée.",
+        "txt2": "Cette modification est très probablement malveillante et n'a pu être faite que par quelqu'un ayant accès à la base de données. Il se peut que le serveur cité soit compromis, ou qu'un admin soit devenu hostile, ou que le code d'UpSignOn contienne une vulnérabilité critique.",
+        "txt3": "Vous trouverez en pièce jointe la clé publique malveillante pour les besoins de l'enquête."
+    },
+    "en": {
+        "subject": "🚨 Security alert - public key modification",
+        "title1": "Security alert",
+        "key_type_sharing": "Sharing",
+        "key_type_signing": "Signing",
+        "title2": "{keyType} public key tampering for a user",
+        "txt1": "The {keyType} public key of user {email} (bank {bankName}, url {bankUrl}) had to be repaired in the database because its value had been modified.",
+        "txt2": "This modification is very likely malicious and could only have been made by someone with access to the database. The referenced server may be compromised, or an admin may have turned hostile, or UpSignOn code may contain a critical vulnerability.",
+        "txt3": "You will find the malicious public key attached for investigation purposes."
+    }
+}

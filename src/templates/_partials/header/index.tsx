@@ -6,7 +6,7 @@ export const Header = () => {
       <Img
         src="https://app.upsignon.eu/mails/logoHeader.png"
         alt="Septeo"
-        className="mx-auto"
+        className="mx-auto mb-6"
       />
       <Img src="https://app.upsignon.eu/mails/nerd.png" alt="Septeo" className="w-full" />
     </Section>

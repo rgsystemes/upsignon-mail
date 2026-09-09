@@ -1,6 +1,9 @@
 import { Img, Section } from '@react-email/components'
 
-export const Header = () => {
+type THeaderProps = {
+  hideImage?: boolean
+}
+export const Header = ({ hideImage }: THeaderProps) => {
   return (
     <Section className="mb-6">
       <Img
@@ -8,7 +11,13 @@ export const Header = () => {
         alt="Septeo"
         className="mx-auto mb-6"
       />
-      <Img src="https://app.upsignon.eu/mails/nerd.png" alt="Septeo" className="w-full" />
+      {!hideImage && (
+        <Img
+          src="https://app.upsignon.eu/mails/nerd.png"
+          alt="Septeo"
+          className="w-full"
+        />
+      )}
     </Section>
   )
 }

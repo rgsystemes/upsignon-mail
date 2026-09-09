@@ -13,8 +13,9 @@ type TLayoutProps = {
   children: ReactNode
   messages: { [tradKey: string]: string }
   locale: Locales
+  hideHeaderImage?: boolean
 }
-export const Layout = ({ children, messages, locale }: TLayoutProps) => {
+export const Layout = ({ children, messages, locale, hideHeaderImage }: TLayoutProps) => {
   const mergedMessages = {
     ...trads[locale],
     ...messages,
@@ -27,7 +28,7 @@ export const Layout = ({ children, messages, locale }: TLayoutProps) => {
         <Tailwind config={tailwindConfig}>
           <Body className="font-sans">
             <Container className="mt-4 bg-white">
-              <Header />
+              <Header hideImage={hideHeaderImage} />
               {children}
               <Footer />
             </Container>

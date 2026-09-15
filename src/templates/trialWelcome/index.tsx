@@ -88,18 +88,6 @@ const Template = async ({
         <Text className="text-base">
           <FormattedMessage id="step2" />
         </Text>
-        <Text className="text-base">
-          <FormattedMessage id="contactContent1" />
-        </Text>
-        <Text className="text-base">
-          <FormattedMessage id="contactContent2" />
-        </Text>
-        <Text className="text-base">
-          <FormattedMessage id="footer1" />
-        </Text>
-        <Text className="text-base">
-          <FormattedMessage id="footer2" />
-        </Text>
       </Section>
     </Layout>
   )

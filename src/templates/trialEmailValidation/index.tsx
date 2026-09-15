@@ -14,7 +14,7 @@ const Template = async ({
   locale = 'fr',
 }: Args & { locale: Locales }) => {
   return (
-    <Layout messages={messages[locale]} locale={locale}>
+    <Layout messages={messages[locale]} locale={locale} hideHeaderImage>
       <Section className="text-text-primary px-4">
         <Text className="text-xl font-bold text-center">
           <FormattedMessage id="title" />
@@ -29,19 +29,6 @@ const Template = async ({
         >
           <FormattedMessage id="activateButton" />
         </Button>
-
-        <Text className="text-base">
-          <FormattedMessage id="stepTitle" />
-        </Text>
-        <Text className="text-base">
-          <FormattedMessage id="step1" />
-        </Text>
-        <Text className="text-base">
-          <FormattedMessage id="step2" />
-        </Text>
-        <Text className="text-base">
-          <FormattedMessage id="step3" />
-        </Text>
       </Section>
     </Layout>
   )

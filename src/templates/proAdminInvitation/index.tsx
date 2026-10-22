@@ -35,7 +35,9 @@ const Template = ({
           href={adminImportLink}
           className="text-base bg-button-primary text-white font-semibold py-2.5 rounded-md w-full text-center"
         >
+          &nbsp;&nbsp;&nbsp;&nbsp;
           <FormattedMessage id="button" />
+          &nbsp;&nbsp;&nbsp;&nbsp;
         </Button>
         <Text className="text-base text-center text-text-secondary">
           <FormattedMessage id="expiration" values={{ remainingTime }} />

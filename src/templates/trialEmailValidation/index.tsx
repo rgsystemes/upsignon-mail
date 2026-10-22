@@ -27,8 +27,12 @@ const Template = async ({
           href={emailValidationLink}
           className="text-base bg-button-primary text-white font-semibold py-2.5 rounded-md w-full text-center"
         >
+          &nbsp;&nbsp;&nbsp;&nbsp;
           <FormattedMessage id="activateButton" />
+          &nbsp;&nbsp;&nbsp;&nbsp;
         </Button>
+        <br />
+        <br />
       </Section>
     </Layout>
   )

@@ -36,8 +36,12 @@ const Template = ({
           href={consoleLink}
           className="text-base bg-button-primary text-white font-semibold py-2.5 rounded-md w-full text-center"
         >
+          &nbsp;&nbsp;&nbsp;&nbsp;
           <FormattedMessage id="button" />
+          &nbsp;&nbsp;&nbsp;&nbsp;
         </Button>
+        <br />
+        <br />
         <Text className="text-base">
           <FormattedMessage
             id="expiration"
